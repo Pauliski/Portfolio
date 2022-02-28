@@ -1,16 +1,52 @@
-html,
-body {
+*,
+*::after,
+*::before {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+  overflow-x: hidden;
 }
 
 a {
-  color: inherit;
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  /* border: 1px solid transparent; */
+  /* border-radius: 0.275rem; */
+  border: none;
+  background-color: transparent;
+  user-select: none;
+}
+button:hover {
+  box-shadow: 0 1rem 2.5rem rgba(22, 28, 45, 0.1),
+    0 0.5rem 1rem -0.75rem rgba(22, 28, 45, 0.1) !important;
+  transform: translate3d(0, -3px, 0);
+}
+#email-link {
+  position: relative;
+}
+#email-link::before {
+  content: "parokoola@gmail.com.com";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -8px;
 }

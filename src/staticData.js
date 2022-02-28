@@ -1,0 +1,1 @@
+export const skillArray = ['React, Next, React Native','Tailwind CSS, Bootstrap', 'Sass, Styled-Component', 'GIT Knowledge']
