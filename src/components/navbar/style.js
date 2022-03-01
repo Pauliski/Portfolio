@@ -5,6 +5,12 @@ export const NavbarWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 0.625rem;
+  @media only screen and (min-width: 768px)  {
+    padding: 1.25rem;
+    position: sticky;
+    top: 0;
+    z-index: 4
+    }
 `;
 export const NavbarSideMenuToggler = styled.button`
   height: 20px;

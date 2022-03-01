@@ -11,6 +11,7 @@ import { SidebarSecondSection, SidebarWrapper } from "./style";
 
 const Sidebar = ({ toggleSidebar, sidebarIsOpen }) => {
   return (
+    
     <SidebarWrapper displaySidebar={sidebarIsOpen}>
       <Introduction toggleSidebar={toggleSidebar} />
       <SidebarSecondSection>
