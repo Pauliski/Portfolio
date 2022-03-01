@@ -7,9 +7,14 @@ export const ServiceCardWrapper = styled.div`
   max-height: 220px;
   border: 1px solid #fff;
   margin-bottom: 1.25rem;
-  @media only screen and (min-width: 768px) {
-    min-width: 300px;
-    max-width: 360px;
+  @media only screen and (min-width: 1030px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 48%;
+  }
+  @media only screen and (min-width: 1300px) {
+    width: 33%;
   }
 `;
 export const ServiceCardHeader = styled.p`

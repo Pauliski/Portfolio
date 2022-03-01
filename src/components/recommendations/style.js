@@ -5,6 +5,19 @@ background-color: #2C2C36;
 border: 1px solid #FFF;
 padding: 1.25rem;
 position: relative;
+@media only screen and (min-width: 1030px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 48%;
+    margin-top: 1.25rem;
+
+  }
+  @media only screen and (min-width: 1300px) {
+    width: 33%;
+   
+
+  }
 `
 export const RecommendationsName = styled.p`
 color: #FFFFFF;
@@ -37,5 +50,8 @@ export const RecommendationsRatingContainer = styled.div`
 background-color: #202029;
 border-radius: 10px;
 width: 50%;
-
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 1.25rem;
 `
