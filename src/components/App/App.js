@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import Achievement from "../achievement/Achievement";
 import AllRecommendation from "../allRecommendation/AllRecommendation";
 import AllServiceCard from "../allServiceCard/AllServiceCard";
+import Education from "../education/Education";
 import Hero from "../hero/Hero";
 import Navbar from "../navbar/Navbar";
+import PulseCircle from "../pulseCircle/PulseCircle";
 import Recommendations from "../recommendations/Recommendations";
+import RotateSquare from "../rotateSquare/RotateSquare";
 import ServiceCard from "../serviceCard/ServiceCard";
 import Sidebar from "../sidebar/Sidebar/Sidebar";
 import {
@@ -29,9 +32,8 @@ const App = () => {
             <Hero />
             <Achievement />
             <AllServiceCard />
-            {/* <Recommendations /> */}
             <AllRecommendation />
-            {/* <Hero /> */}
+            <Education />
           </AppHeroSection>
         </AppSecondSection>
       </AppSecondSectionContaner>

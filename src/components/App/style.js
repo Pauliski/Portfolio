@@ -13,6 +13,7 @@ export const AppSecondSection = styled.div`
 display: flex;
 width: 100%;
 background-color: #2d2a35;
+background-color: rgba(30, 30, 40, 0.88);
 padding: 1.25rem;
 `
 export const AppHeroSection = styled.div`

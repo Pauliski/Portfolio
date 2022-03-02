@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 export const RecommendationsWrapper = styled.div`
 background-color: #2C2C36;
-border: 1px solid #FFF;
+/* border: 1px solid #FFF; */
 padding: 1.25rem;
 position: relative;
+margin-bottom: 1.25rem;
 @media only screen and (min-width: 1030px) {
     display: flex;
     flex-wrap: wrap;

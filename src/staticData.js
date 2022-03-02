@@ -45,4 +45,32 @@ export const recommendations = [
   
       },
   ];
+  export const educations = [
+    {
+      body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, iusto recusandae. Ad eveniet dolor ab quisquam, numquam officia quo nesciunt eius excepturi voluptates, quidem autem, totam repellendus necessitatibus accusamus! Quos.",
+      title: "Frontend Web Development",
+      date: 'Oct 2012 - 0ct 2016',
+      buttonLabel: 'DIPLOME ﹥'
+    },
+    {
+      body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, iusto recusandae. Ad eveniet dolor ab quisquam, numquam officia quo nesciunt eius excepturi voluptates, quidem autem, totam repellendus necessitatibus accusamus! Quos.",
+      title: "Frontend Web Development",
+      date: 'Oct 2012 - 0ct 2016',
+      buttonLabel: 'DIPLOME ﹥'
+    },
+    {
+      body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, iusto recusandae. Ad eveniet dolor ab quisquam, numquam officia quo nesciunt eius excepturi voluptates, quidem autem, totam repellendus necessitatibus accusamus! Quos.",
+      title: "Frontend Web Development",
+      date: 'Oct 2012 - 0ct 2016',
+      buttonLabel: 'DIPLOME ﹥'
+    },
+    {
+      body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, iusto recusandae. Ad eveniet dolor ab quisquam, numquam officia quo nesciunt eius excepturi voluptates, quidem autem, totam repellendus necessitatibus accusamus! Quos.",
+      title: "Frontend Web Development",
+      date: 'Oct 2012 - 0ct 2016',
+      buttonLabel: 'DIPLOME ﹥'
+    },
+    
+    
+  ];
   

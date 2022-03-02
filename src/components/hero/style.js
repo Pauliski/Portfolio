@@ -44,5 +44,9 @@ export const HeroFirstSection = styled.div`
 `;
 
 export const HeroImage = styled.div`
-  z-index: 2;
+ display: none;
+  @media only screen and (min-width: 950px) {
+    display: block;
+    z-index: 2;
+  }
 `;
