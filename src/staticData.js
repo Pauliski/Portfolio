@@ -26,51 +26,77 @@ export const myServices = [
 ];
 
 export const recommendations = [
-    {
-      body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, iusto recusandae. Ad eveniet dolor ab quisquam, numquam officia quo nesciunt eius excepturi voluptates, quidem autem, totam repellendus necessitatibus accusamus! Quos.",
-      author: "Peteru Johnny",
-      rating: 3
+  {
+    body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, iusto recusandae. Ad eveniet dolor ab quisquam, numquam officia quo nesciunt eius excepturi voluptates, quidem autem, totam repellendus necessitatibus accusamus! Quos.",
+    author: "Peteru Johnny",
+    rating: 3,
+  },
+  {
+    body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, iusto recusandae. Ad eveniet dolor ab quisquam, numquam officia quo nesciunt eius excepturi voluptates, quidem autem, totam repellendus necessitatibus accusamus! Quos.",
+    author: "Peteru Johnny",
+    rating: 5,
+  },
+  {
+    body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, iusto recusandae. Ad eveniet dolor ab quisquam, numquam officia quo nesciunt eius excepturi voluptates, quidem autem, totam repellendus necessitatibus accusamus! Quos.",
+    author: "Peteru Johnny",
+    rating: 4,
+  },
+];
+export const educations = [
+  {
+    body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, iusto recusandae. Ad eveniet dolor ab quisquam, numquam officia quo nesciunt eius excepturi voluptates, quidem autem, totam repellendus necessitatibus accusamus! Quos.",
+    title: "Frontend Web Development",
+    date: "Oct 2012 - 0ct 2016",
+    buttonLabel: "DIPLOME ﹥",
+  },
+  {
+    body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, iusto recusandae. Ad eveniet dolor ab quisquam, numquam officia quo nesciunt eius excepturi voluptates, quidem autem, totam repellendus necessitatibus accusamus! Quos.",
+    title: "Frontend Web Development",
+    date: "Oct 2012 - 0ct 2016",
+    buttonLabel: "DIPLOME ﹥",
+  },
+  {
+    body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, iusto recusandae. Ad eveniet dolor ab quisquam, numquam officia quo nesciunt eius excepturi voluptates, quidem autem, totam repellendus necessitatibus accusamus! Quos.",
+    title: "Frontend Web Development",
+    date: "Oct 2012 - 0ct 2016",
+    buttonLabel: "DIPLOME ﹥",
+  },
+  {
+    body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, iusto recusandae. Ad eveniet dolor ab quisquam, numquam officia quo nesciunt eius excepturi voluptates, quidem autem, totam repellendus necessitatibus accusamus! Quos.",
+    title: "Frontend Web Development",
+    date: "Oct 2012 - 0ct 2016",
+    buttonLabel: "DIPLOME ﹥",
+  },
+];
+export const workHistories = [
+  {
+    body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, iusto recusandae. Ad eveniet dolor ab quisquam, numquam officia quo nesciunt eius excepturi voluptates, quidem autem, totam repellendus necessitatibus accusamus! Quos.",
+    title: "TeamPhixit",
+    date: "Oct 2012 - 0ct 2016",
+    buttonLabel: "DIPLOME ﹥",
+    jobTitle: "Software Engineer",
+  },
+  {
+    body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, iusto recusandae. Ad eveniet dolor ab quisquam, numquam officia quo nesciunt eius excepturi voluptates, quidem autem, totam repellendus necessitatibus accusamus! Quos.",
+    title: "TeamPhixit",
+    date: "Oct 2012 - 0ct 2016",
+    buttonLabel: "DIPLOME ﹥",
+    jobTitle: "Software Engineer",
+  },
+  {
+    body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, iusto recusandae. Ad eveniet dolor ab quisquam, numquam officia quo nesciunt eius excepturi voluptates, quidem autem, totam repellendus necessitatibus accusamus! Quos.",
+    title: "TeamPhixit",
+    date: "Oct 2012 - 0ct 2016",
+    buttonLabel: "DIPLOME ﹥",
+    jobTitle: "Software Engineer",
+  },
+  {
+    body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, iusto recusandae. Ad eveniet dolor ab quisquam, numquam officia quo nesciunt eius excepturi voluptates, quidem autem, totam repellendus necessitatibus accusamus! Quos.",
+    title: "TeamPhixit",
+    date: "Oct 2012 - 0ct 2016",
+    buttonLabel: "DIPLOME ﹥",
+    jobTitle: "Software Engineer",
+  },
+];
 
-    },
-    {
-        body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, iusto recusandae. Ad eveniet dolor ab quisquam, numquam officia quo nesciunt eius excepturi voluptates, quidem autem, totam repellendus necessitatibus accusamus! Quos.",
-        author: "Peteru Johnny",
-        rating: 5
-  
-      },
-      {
-        body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, iusto recusandae. Ad eveniet dolor ab quisquam, numquam officia quo nesciunt eius excepturi voluptates, quidem autem, totam repellendus necessitatibus accusamus! Quos.",
-        author: "Peteru Johnny",
-        rating: 4
-  
-      },
-  ];
-  export const educations = [
-    {
-      body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, iusto recusandae. Ad eveniet dolor ab quisquam, numquam officia quo nesciunt eius excepturi voluptates, quidem autem, totam repellendus necessitatibus accusamus! Quos.",
-      title: "Frontend Web Development",
-      date: 'Oct 2012 - 0ct 2016',
-      buttonLabel: 'DIPLOME ﹥'
-    },
-    {
-      body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, iusto recusandae. Ad eveniet dolor ab quisquam, numquam officia quo nesciunt eius excepturi voluptates, quidem autem, totam repellendus necessitatibus accusamus! Quos.",
-      title: "Frontend Web Development",
-      date: 'Oct 2012 - 0ct 2016',
-      buttonLabel: 'DIPLOME ﹥'
-    },
-    {
-      body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, iusto recusandae. Ad eveniet dolor ab quisquam, numquam officia quo nesciunt eius excepturi voluptates, quidem autem, totam repellendus necessitatibus accusamus! Quos.",
-      title: "Frontend Web Development",
-      date: 'Oct 2012 - 0ct 2016',
-      buttonLabel: 'DIPLOME ﹥'
-    },
-    {
-      body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, iusto recusandae. Ad eveniet dolor ab quisquam, numquam officia quo nesciunt eius excepturi voluptates, quidem autem, totam repellendus necessitatibus accusamus! Quos.",
-      title: "Frontend Web Development",
-      date: 'Oct 2012 - 0ct 2016',
-      buttonLabel: 'DIPLOME ﹥'
-    },
-    
-    
-  ];
-  
+export const contacts = [{country: 'Nigeria', city: ''}]

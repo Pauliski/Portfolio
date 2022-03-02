@@ -2,7 +2,7 @@ import React from "react";
 import PulseCircle from "../pulseCircle/PulseCircle";
 import RotateSquare from "../rotateSquare/RotateSquare";
 import {
-    EducationCardBody,
+  EducationCardBody,
   EducationCardButton,
   EducationCardContainer,
   EducationCardDate,
@@ -13,27 +13,28 @@ import {
   EducationCardWrapper,
 } from "./style";
 
-const EducationCard = ({body, title, date, buttonLabel}) => {
+const EducationCard = ({ body, title, date, buttonLabel, jobTitle }) => {
   return (
     <EducationCardContainer>
-         <EducationCardWrapper>
-      <EducationCardHeaderContainer>
-        <EducationCardTitle>{title}</EducationCardTitle>
-        <EducationCardDateContainer>
-          <EducationCardDate>{date}</EducationCardDate>
-        </EducationCardDateContainer>
-      </EducationCardHeaderContainer>
-      <EducationCardBody>
-        {body}
-      </EducationCardBody>
-      <EducationCardButton>{buttonLabel}</EducationCardButton>
-    </EducationCardWrapper>
-    <EducationCardIconContainer>
+      <EducationCardWrapper>
+        <EducationCardHeaderContainer>
+          <>
+           <EducationCardTitle>{title}</EducationCardTitle>
+           <>{jobTitle}</>
+          </>
+         
+          <EducationCardDateContainer>
+            <EducationCardDate>{date}</EducationCardDate>
+          </EducationCardDateContainer>
+        </EducationCardHeaderContainer>
+        <EducationCardBody>{body}</EducationCardBody>
+        <EducationCardButton>{buttonLabel}</EducationCardButton>
+      </EducationCardWrapper>
+      <EducationCardIconContainer>
         <RotateSquare />
         <PulseCircle />
-    </EducationCardIconContainer>
+      </EducationCardIconContainer>
     </EducationCardContainer>
-   
   );
 };
 
