@@ -1,18 +1,14 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { ThemeContext } from "../../../context/ThemeContext";
 import Achievement from "../achievement/Achievement";
 import AllRecommendation from "../allRecommendation/AllRecommendation";
 import AllServiceCard from "../allServiceCard/AllServiceCard";
 import Contact from "../contact/Contact";
-import ContactCard from "../contactCard/ContactCard";
-import Education from "../education/Education";
 import GetInTouch from "../getInTouch/GetInTouch";
 import Hero from "../hero/Hero";
 import Navbar from "../navbar/Navbar";
-import PulseCircle from "../pulseCircle/PulseCircle";
-import Recommendations from "../recommendations/Recommendations";
-import RotateSquare from "../rotateSquare/RotateSquare";
-import ServiceCard from "../serviceCard/ServiceCard";
 import Sidebar from "../sidebar/Sidebar/Sidebar";
+import ToggleButton from "../toggleButton/ToggleButton";
 import WorkAndEducation from "../workAndEducation/WorkAndEducation";
 import {
   AppHeroSection,
@@ -22,6 +18,8 @@ import {
 } from "./style";
 
 const App = () => {
+  const { background, buttonColor } = useContext(ThemeContext);
+  console.log(background)
   const [displaySidebar, setDisplaySidebar] = useState(false);
   const toggleSidebar = () => {
     setDisplaySidebar(!displaySidebar);
@@ -31,14 +29,14 @@ const App = () => {
       <Navbar toggleSidebar={toggleSidebar} />
       <AppSecondSectionContaner>
         <Sidebar toggleSidebar={toggleSidebar} sidebarIsOpen={displaySidebar} />
-        <AppSecondSection>
+        <AppSecondSection backgroundColor={background}>
           <AppHeroSection>
             <Hero />
             <Achievement />
             <AllServiceCard />
             <AllRecommendation />
             <WorkAndEducation />
-           <Contact />
+            <Contact />
             <GetInTouch />
           </AppHeroSection>
         </AppSecondSection>

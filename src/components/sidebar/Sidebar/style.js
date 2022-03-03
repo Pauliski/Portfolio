@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const SidebarWrapper = styled.div`
-  background-color: #20202a;
+  /* background-color: #20202a; */
+  background-color: ${props => props.backgroundColor};
   height: 100vh;
   width: 18.125rem;
   z-index: 3;
@@ -25,15 +26,16 @@ export const SidebarSecondSection = styled.div`
 
   & ::-webkit-scrollbar {
     width: 5px;
-    background-color: #ffffff;
-    /* display: none; */
+  
   }
   & ::-webkit-scrollbar-track {
     border-radius: 10px;
-    background-color: #f5f5f5;
+    /* background-color: #f5f5f5; */
+    background-color: ${props => props.color};
   }
   & ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-color: #ffc107;
+    /* background-color: #ffc107; */
+    background-color: ${props => props.backgroundColor};
   }
 `;

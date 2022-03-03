@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { ThemeContext } from "../../../../context/ThemeContext";
 import AllProgressBar from "../allProgressBar/AllProgressBar";
 import CircularBar from "../circularBar/CircularBar";
 import Download from "../download/Download";
@@ -10,11 +11,12 @@ import ProgressBar from "../progressbar/ProgressBar";
 import { SidebarSecondSection, SidebarWrapper } from "./style";
 
 const Sidebar = ({ toggleSidebar, sidebarIsOpen }) => {
+  const {cardColor, buttonColor, fontColorOne} = useContext(ThemeContext)
   return (
     
-    <SidebarWrapper displaySidebar={sidebarIsOpen}>
+    <SidebarWrapper backgroundColor={cardColor} displaySidebar={sidebarIsOpen}>
       <Introduction toggleSidebar={toggleSidebar} />
-      <SidebarSecondSection>
+      <SidebarSecondSection backgroundColor={buttonColor} color={fontColorOne}>
         <Location />
         <CircularBar displaySidebar={sidebarIsOpen} />
         <AllProgressBar />

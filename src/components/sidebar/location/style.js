@@ -11,10 +11,11 @@ export const LocationDetails = styled.div`
   display: flex;
   justify-content: space-between;
   & > p :nth-child(1) {
-    color: #ffffff;
+    /* color: #ffffff; */
+    color: ${(props) => props.fontColorOne};
   }
   & > p :nth-child(2) {
-    color: #77777a;
+    /* color: #77777a; */
+    color: ${(props) => props.fontColorTwo};
   }
 `;
-

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const ServiceCardWrapper = styled.div`
   background-color: #2c2c38;
+  background-color: ${props=>props.backgroundColor};
   width: 100%;
   padding: 1.25rem;
   max-height: 220px;
@@ -19,6 +20,7 @@ export const ServiceCardWrapper = styled.div`
 `;
 export const ServiceCardHeader = styled.p`
   color: #ffffff;
+  color: ${props=>props.color};
   font-size: 25px;
   margin-bottom: 0.625rem;
 `;
@@ -33,5 +35,6 @@ export const ServiceCardBody = styled.p`
 `;
 export const ServiceCardButton = styled.button`
   color: #ffc107;
+  color: ${props=>props.color};
   padding: 10px 0;
 `;

@@ -11,7 +11,8 @@ flex-direction: column;
 `
 export const AllServiceCardHeader = styled.p`
 font-size: 1.2rem;
-color: #FFF;
+/* color: #FFF; */
+color: ${props => props.color};
 margin: 1.5rem 0;
 font-weight: bold;
 `

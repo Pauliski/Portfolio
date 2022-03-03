@@ -11,7 +11,8 @@ export const ProgressBarContainer = styled.div`
   &::before {
     content: '';
     position: absolute;
-    background-color: #ffc107;
+    /* background-color: #ffc107; */
+    background-color: ${props => props.buttonColor};
     top: 0;
     bottom: 0;
     height: 100%;
@@ -24,9 +25,11 @@ align-items: center;
 justify-content: space-between;
 margin-bottom: 0.3125rem;
 & > p :nth-child(1) {
-    color: #ffffff;
+    /* color: #ffffff; */
+    color: ${props => props.fontColorOne};
   }
   & > p :nth-child(2) {
-    color: #77777a;
+    /* color: #77777a; */
+    color: ${props => props.fontColorTwo};
   }
 `

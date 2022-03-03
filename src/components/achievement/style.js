@@ -15,11 +15,13 @@ flex-wrap: nowrap;
 /* margin-right: 120px; */
 & > p :nth-child(1) {
     color: #ffc107;
+    color: ${props=> props.numberColor};
     margin-right: 1.25rem;
     font-size: 1.3rem;
     font-weight: bold;
   }
   & > p :nth-child(2) {
     color: #FFFFFF;
+    color: ${props => props.color}
   }
 `

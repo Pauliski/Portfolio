@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -12,20 +12,23 @@ import {
   IntroductionSvgContainer,
 } from "./style";
 import EllipsisVertical from "../../../../public/assets/icons/EllipsisVertical";
+import { ThemeContext } from "../../../../context/ThemeContext";
 
-const Introduction = ({toggleSidebar}) => {
+const Introduction = ({ toggleSidebar }) => {
+  const { fontColorOne, fontColorTwo, cardColor, background, buttonColor } =
+    useContext(ThemeContext);
   return (
-    <IntroductionWrapper>
+    <IntroductionWrapper backgroundColor={background}>
       <IntroductionDetails>
-        <IntroductionSvgContainer onClick={toggleSidebar} >
+        <IntroductionSvgContainer fill={fontColorOne} onClick={toggleSidebar}>
           <EllipsisVertical />
         </IntroductionSvgContainer>
         <IntroductionImageContainer>
           <IntroductionImage src="/assets/images/profilepix.jpg" />
-          <IntroductionActiveStatus />
+          <IntroductionActiveStatus backgroundColor={buttonColor}/>
         </IntroductionImageContainer>
-        <IntroductionName>PAUL AROKOOLA</IntroductionName>
-        <IntroductionProfession>Javascript Developer</IntroductionProfession>
+        <IntroductionName fontColor={fontColorOne}>PAUL AROKOOLA</IntroductionName>
+        <IntroductionProfession fontColor={fontColorOne}>Javascript Developer</IntroductionProfession>
       </IntroductionDetails>
     </IntroductionWrapper>
   );

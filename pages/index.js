@@ -8,6 +8,7 @@ import Navbar from "../src/components/navbar/Navbar";
 import { useState } from "react";
 import Hero from "../src/components/hero/Hero";
 import App from "../src/components/App/App";
+import ThemeContextProvider from "../context/ThemeContext";
 
 export default function Home() {
   
@@ -20,7 +21,10 @@ export default function Home() {
       </Head>
 
       <main>
-        <App />
+        <ThemeContextProvider>
+          <App />
+        </ThemeContextProvider>
+        
       </main>
     </div>
   );
