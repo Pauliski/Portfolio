@@ -13,7 +13,8 @@ export const AllRecommendationWrapper = styled.div`
   }
 `;
 export const AllRecommendationHeader = styled.p`
-color: #FFFFFF;
+/* color: #FFFFFF; */
+color: ${props =>props.color};
 font-size: 1.2rem;
 font-weight: bold;
 margin: 1.25rem 0;

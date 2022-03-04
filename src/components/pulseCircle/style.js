@@ -15,8 +15,10 @@ export const PulseCircleWrapper = styled.div`
   width: 0.9375rem;
   height: 0.9375rem;
   border-radius: 50%;
-  border: 0.1875rem solid #ffc107;
-  background-color: #2c2c38;
+  /* border: 0.1875rem solid #ffc107; */
+  border: 0.1875rem solid ${props => props.borderColor};
+  /* background-color: #2c2c38; */
+  background-color: ${props => props.backgroundColor};
   animation: ${pulse} 1s infinite;
 `;
 

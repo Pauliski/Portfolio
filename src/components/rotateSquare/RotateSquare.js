@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { ThemeContext } from '../../../context/ThemeContext'
 import { RotateSquareWrapper } from './style'
 
 const RotateSquare = () => {
+  const {cardColor} = useContext(ThemeContext)
   return (
-    <RotateSquareWrapper></RotateSquareWrapper>
+    <RotateSquareWrapper backgroundColor={cardColor}></RotateSquareWrapper>
   )
 }
 

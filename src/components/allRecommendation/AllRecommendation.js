@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../../../context/ThemeContext";
 import { recommendations } from "../../staticData";
 import Recommendations from "../recommendations/Recommendations";
 import { AllRecommendationHeader, AllRecommendationWrapper } from "./style";
 
 const AllRecommendation = () => {
+  const {cardColor, buttonColor, fontColorOne} = useContext(ThemeContext)
   return (
     <>
-    <AllRecommendationHeader>Recommendation</AllRecommendationHeader>
+    <AllRecommendationHeader color={fontColorOne}>Recommendation</AllRecommendationHeader>
     <AllRecommendationWrapper>
       {recommendations.map((item, i) => (
         <Recommendations

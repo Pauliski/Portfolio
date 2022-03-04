@@ -9,7 +9,8 @@ export const InputWrapper = styled.div`
   margin-bottom: 1.25rem;
 `;
 export const InputIconContainer = styled.div`
-  background-color: #20202a;
+  /* background-color: #20202a; */
+  background-color: ${props => props.backgroundColor};
   height: 100%;
   width: 50px;
   display: flex;
@@ -18,20 +19,24 @@ export const InputIconContainer = styled.div`
   & > svg {
     height: 1rem;
     width: 1rem;
-    fill: #67676c;
+    /* fill: #67676c; */
+    fill: ${props => props.color};
   }
 `;
 export const InputField = styled.input`
   height: 100%;
   background-color: transparent;
+  background-color: ${props => props.backgroundColor};
   width: 100%;
   border: none;
   color: #ffffff;
+  color: ${props => props.color};
   padding-left: 10px;
   outline: none;
   font-size: 1.2rem;
   &:focus  + div{
     background-color: #ffc107;
+    background-color: ${props => props.buttonColor};
     & svg{
         fill: #000;
     }

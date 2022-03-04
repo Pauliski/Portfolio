@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../../../context/ThemeContext";
 import PulseCircle from "../pulseCircle/PulseCircle";
 import RotateSquare from "../rotateSquare/RotateSquare";
 import {
@@ -14,21 +15,22 @@ import {
 } from "./style";
 
 const EducationCard = ({ body, title, date, buttonLabel, jobTitle }) => {
+  const {cardColor, buttonColor, fontColorOne, fontColorTwo, background} = useContext(ThemeContext)
   return (
-    <EducationCardContainer>
-      <EducationCardWrapper>
+    <EducationCardContainer backgroundColor={cardColor}>
+      <EducationCardWrapper >
         <EducationCardHeaderContainer>
           <>
-           <EducationCardTitle>{title}</EducationCardTitle>
-           <>{jobTitle}</>
+           <EducationCardTitle color={fontColorOne}>{title}</EducationCardTitle>
+           <div style={{color:`${fontColorTwo}`}}>{jobTitle}</div>
           </>
          
-          <EducationCardDateContainer>
-            <EducationCardDate>{date}</EducationCardDate>
+          <EducationCardDateContainer backgroundColor={background}>
+            <EducationCardDate color={fontColorTwo}>{date}</EducationCardDate>
           </EducationCardDateContainer>
         </EducationCardHeaderContainer>
-        <EducationCardBody>{body}</EducationCardBody>
-        <EducationCardButton>{buttonLabel}</EducationCardButton>
+        <EducationCardBody color={fontColorTwo}>{body}</EducationCardBody>
+        <EducationCardButton color={buttonColor}>{buttonLabel}</EducationCardButton>
       </EducationCardWrapper>
       <EducationCardIconContainer>
         <RotateSquare />

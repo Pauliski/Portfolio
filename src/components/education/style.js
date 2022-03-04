@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const EducationSessionTitle = styled.p`
   color: #ffffff;
+  color: ${props => props.color};
   font-size: 1.2rem;
   margin-bottom: 1.25rem;
   font-weight: bold;

@@ -9,6 +9,7 @@ const ThemeContextProvider = ({children}) => {
         cardColor: '#FFFFFF',
         background: '#F4F5F7',
         buttonColor: '#AFB42B',
+        
     }:{
         fontColorOne: '#FFFFFF',
         fontColorTwo: '#77777a',

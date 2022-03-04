@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const TextareaWrapper = styled.div`
   background-color: #24242f;
+  background-color: ${props => props.backgroundColor};
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -11,9 +12,11 @@ export const TextareaWrapper = styled.div`
 export const TextareaField = styled.textarea`
   height: 100%;
   background-color: transparent;
+  background-color: ${props => props.backgroundColor};
   width: 100%;
   border: none;
   color: #ffffff;
+  color: ${props => props.color};
   padding-left: 10px;
   outline: none;
   font-size: 1.2rem;
@@ -26,6 +29,7 @@ export const TextareaField = styled.textarea`
 `;
 export const TextareaIconContainer = styled.div`
 background-color: #20202a;
+background-color: ${props => props.backgroundColor};
   height: 100%;
   width: 50px;
   padding-top: 1.25rem;
@@ -34,5 +38,6 @@ background-color: #20202a;
     height: 1rem;
     width: 1rem;
     fill: #67676c;
+    fill: ${props => props.color};
   }
 `

@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { ThemeContext } from '../../../context/ThemeContext'
 import ContactCard from '../contactCard/ContactCard'
 import { ContactSessionTitle, ContactWrapper } from './style'
 
 const Contact = () => {
+  const {cardColor, fontColorOne, fontColorTwo} = useContext(ThemeContext)
   return (
       <>
-      <ContactSessionTitle>Contact information</ContactSessionTitle>
+      <ContactSessionTitle color={fontColorOne}>Contact information</ContactSessionTitle>
        <ContactWrapper>
         <ContactCard />
     </ContactWrapper>

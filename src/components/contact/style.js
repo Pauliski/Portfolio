@@ -6,6 +6,7 @@ padding: 1.25rem 0;
 export const ContactSessionTitle = styled.div`
 font-size: 1.2rem;
 color: #FFFFFF;
+color: ${props => props.color};
 font-weight: bold;
 margin: 1.25rem;
 text-align: center;
