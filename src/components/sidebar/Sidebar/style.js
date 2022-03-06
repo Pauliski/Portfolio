@@ -16,7 +16,7 @@ export const SidebarWrapper = styled.div`
     left: 0;
     top: 60px;
     position: sticky;
-    height: calc(100vh - 3.75rem);
+    height: calc(100vh - 1.2rem);
   }
 `;
 export const SidebarSecondSection = styled.div`

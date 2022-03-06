@@ -99,4 +99,35 @@ export const workHistories = [
   },
 ];
 
-export const contacts = [{country: 'Nigeria', city: ''}]
+export const contacts = [{ country: "Nigeria", city: "" }];
+
+export const projects = [
+  {
+    title: "Edvora Assesment",
+    about:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, iusto recusandae. Ad eveniet dolor ab quisquam, numquam officia quo nesciunt eius excepturi voluptates, quidem autem, totam repellendus necessitatibus accusamus! Quos.",
+    codeLink: "https://github.com/Pauliski/Edvora-Assessment",
+    demoLink: "https://inspiring-bassi-eca2ca.netlify.app/",
+  },
+  {
+    title: "Edvora Assesment",
+    about:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, iusto recusandae. Ad eveniet dolor ab quisquam, numquam officia quo nesciunt eius excepturi voluptates, quidem autem, totam repellendus necessitatibus accusamus! Quos.",
+    codeLink: "https://github.com/Pauliski/Edvora-Assessment",
+    demoLink: "https://inspiring-bassi-eca2ca.netlify.app/",
+  },
+  {
+    title: "Edvora Assesment",
+    about:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, iusto recusandae. Ad eveniet dolor ab quisquam, numquam officia quo nesciunt eius excepturi voluptates, quidem autem, totam repellendus necessitatibus accusamus! Quos.",
+    codeLink: "https://github.com/Pauliski/Edvora-Assessment",
+    demoLink: "https://inspiring-bassi-eca2ca.netlify.app/",
+  },
+  {
+    title: "Edvora Assesment",
+    about:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, iusto recusandae. Ad eveniet dolor ab quisquam, numquam officia quo nesciunt eius excepturi voluptates, quidem autem, totam repellendus necessitatibus accusamus! Quos.",
+    codeLink: "https://github.com/Pauliski/Edvora-Assessment",
+    demoLink: "https://inspiring-bassi-eca2ca.netlify.app/",
+  },
+];

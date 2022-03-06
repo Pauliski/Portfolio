@@ -1,12 +1,14 @@
 import React, { useContext, useState } from "react";
 import { ThemeContext } from "../../../context/ThemeContext";
 import Achievement from "../achievement/Achievement";
+import AllProject from "../allProject/AllProject";
 import AllRecommendation from "../allRecommendation/AllRecommendation";
 import AllServiceCard from "../allServiceCard/AllServiceCard";
 import Contact from "../contact/Contact";
 import GetInTouch from "../getInTouch/GetInTouch";
 import Hero from "../hero/Hero";
 import Navbar from "../navbar/Navbar";
+import ProjectCard from "../projectCard/ProjectCard";
 import Sidebar from "../sidebar/Sidebar/Sidebar";
 import ToggleButton from "../toggleButton/ToggleButton";
 import WorkAndEducation from "../workAndEducation/WorkAndEducation";
@@ -34,6 +36,7 @@ const App = () => {
             <Hero />
             <Achievement />
             <AllServiceCard />
+            <AllProject />
             <AllRecommendation />
             <WorkAndEducation />
             <Contact />
