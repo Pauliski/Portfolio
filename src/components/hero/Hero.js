@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useContext} from "react";
+import { ThemeContext } from "../../../context/ThemeContext";
 import {
   HeroBackground,
   HeroBackgroundContainer,
@@ -11,12 +12,13 @@ import {
 } from "./style";
 
 const Hero = () => {
+  const {overlay, fontColorOne} = useContext(ThemeContext)
   return (
     <HeroContainer>
        <HeroWrapper>
-        <HeroSectionOverlay>  
+        <HeroSectionOverlay backgroundColor={overlay}>  
         </HeroSectionOverlay> 
-          <HeroFirstSection>
+          <HeroFirstSection color={fontColorOne}>
             <div>
               <p>I'm here to create meaningful and lasting relationship with my clients</p>
               <h1>LET'S BUILD SOMETHING AMAZING TOGETHER</h1>

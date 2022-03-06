@@ -26,6 +26,7 @@ export const HeroWrapper = styled.div`
 
 export const HeroSectionOverlay = styled.div`
   background-color: rgba(0, 0, 0, 0.8);
+  background-color: ${props => props.backgroundColor};
   position: absolute;
   width: 100%;
   height: 100%;
@@ -36,6 +37,7 @@ export const HeroBackgroundImage = styled.img`
 export const HeroFirstSection = styled.div`
   padding: 1.25rem;
   color: #ffffff;
+  color: ${props => props.color};
   display: flex;
   flex-direction: column;
   justify-content: center;

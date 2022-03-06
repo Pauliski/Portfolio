@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../../../context/ThemeContext";
 import { workHistories } from "../../staticData";
 import EducationCard from "../educationCard/EducationCard";
 import {
@@ -9,9 +10,10 @@ import {
 } from "./style";
 
 const WorkHistory = () => {
+  const {fontColorOne} = useContext(ThemeContext)
   return (
     <div>
-      <WorkHistorySessionTitle>Work History</WorkHistorySessionTitle>
+      <WorkHistorySessionTitle color={fontColorOne}>Work History</WorkHistorySessionTitle>
       <WorkHistoryWrapper>
         <WorkHistoryContainer>
           {workHistories.map((item, key) => (

@@ -21,7 +21,8 @@ export const TextareaField = styled.textarea`
   outline: none;
   font-size: 1.2rem;
   &:focus + div {
-    background-color: #ffc107;
+    /* background-color: #ffc107; */
+    background-color: ${props => props.buttonColor} ;
     & svg {
       fill: #000;
     }
