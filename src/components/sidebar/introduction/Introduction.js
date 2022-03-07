@@ -24,7 +24,7 @@ const Introduction = ({ toggleSidebar }) => {
           <EllipsisVertical />
         </IntroductionSvgContainer>
         <IntroductionImageContainer>
-          <IntroductionImage src="/assets/images/profilepix.jpg" />
+          <IntroductionImage src="/assets/images/mypix.png" />
           <IntroductionActiveStatus backgroundColor={buttonColor}/>
         </IntroductionImageContainer>
         <IntroductionName fontColor={fontColorOne}>PAUL AROKOOLA</IntroductionName>

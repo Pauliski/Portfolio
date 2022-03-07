@@ -4,28 +4,30 @@ import {
   HeroBackground,
   HeroBackgroundContainer,
   HeroBackgroundImage,
+  HeroBigText,
   HeroContainer,
   HeroFirstSection,
   HeroImage,
   HeroSectionOverlay,
+  HeroSmallText,
   HeroWrapper,
 } from "./style";
 
 const Hero = () => {
   const {overlay, fontColorOne} = useContext(ThemeContext)
   return (
-    <HeroContainer>
+    <HeroContainer id="home">
        <HeroWrapper>
         <HeroSectionOverlay backgroundColor={overlay}>  
         </HeroSectionOverlay> 
           <HeroFirstSection color={fontColorOne}>
             <div>
-              <p>I'm here to create meaningful and lasting relationship with my clients</p>
-              <h1>LET'S BUILD SOMETHING AMAZING TOGETHER</h1>
+              <HeroSmallText>I'm here to create meaningful and lasting relationship with my clients</HeroSmallText>
+              <HeroBigText>LET'S BUILD SOMETHING AMAZING TOGETHER</HeroBigText>
             </div>
       </HeroFirstSection>
       <HeroImage>
-        <img src="assets/images/profilepixfull.png" alt="pix" />
+        <img src="assets/images/myprofilepix.png" alt="pix" />
       </HeroImage>
        
     

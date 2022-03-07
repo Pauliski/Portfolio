@@ -8,7 +8,7 @@ const AllProject = () => {
     const { fontColorOne }  = useContext(ThemeContext)
   return (
     <div>
-        <AllProjectHeader color={fontColorOne}>Projects</AllProjectHeader>
+        <AllProjectHeader color={fontColorOne} id="projects">Projects</AllProjectHeader>
         <AllProjectWrapper>
       {projects.map((item, i) => (
         <ProjectCard

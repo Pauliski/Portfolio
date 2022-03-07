@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const SidebarWrapper = styled.div`
   /* background-color: #20202a; */
-  background-color: ${props => props.backgroundColor};
-  height: 100vh;
+  background-color: ${(props) => props.backgroundColor};
+  /* height: 100%; */
   width: 18.125rem;
   z-index: 3;
 
@@ -16,26 +16,26 @@ export const SidebarWrapper = styled.div`
     left: 0;
     top: 60px;
     position: sticky;
-    height: calc(100vh - 1.2rem);
+    height: calc(100vh - 1rem);
+    height: 100%;
   }
 `;
 export const SidebarSecondSection = styled.div`
-  height: calc(100vh - 16.875rem - 2.5rem);
+  height: calc(100vh - 16.875rem - 4.5rem);
   padding: 1.875rem;
   overflow-y: scroll;
 
   & ::-webkit-scrollbar {
     width: 5px;
-  
   }
   & ::-webkit-scrollbar-track {
     border-radius: 10px;
     /* background-color: #f5f5f5; */
-    background-color: ${props => props.color};
+    background-color: ${(props) => props.color};
   }
   & ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     /* background-color: #ffc107; */
-    background-color: ${props => props.backgroundColor};
+    background-color: ${(props) => props.backgroundColor};
   }
 `;

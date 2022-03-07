@@ -40,7 +40,7 @@ const GetInTouch = () => {
   };
   return (
     <div>
-      <GetInTouchSessionTittle color={fontColorOne}>
+      <GetInTouchSessionTittle color={fontColorOne} id="getInTouch">
         Get in touch
       </GetInTouchSessionTittle>
       <GetInTouchWrapper backgroundColor={cardColor} onSubmit={handleSubmit}>

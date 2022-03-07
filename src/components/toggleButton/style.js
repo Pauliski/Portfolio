@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const ToggleButtonWrapper = styled.label`
 position: relative;
+display: none;
+@media only screen and (min-width: 768px) {
+   display: block;
+  }
 `
 export const ToggleButtonCheckbox = styled.input`
 position: absolute;

@@ -44,7 +44,22 @@ export const HeroFirstSection = styled.div`
   align-items: center;
   z-index: 2;
 `;
-
+export const HeroSmallText = styled.p`
+ margin-bottom: .5rem;
+ font-style: italic;
+ font-weight: bold;
+  @media only screen and (min-width: 950px) {
+    
+  }
+`;
+export const HeroBigText = styled.h2`
+ margin-bottom: .5rem;
+ font-style: normal;
+ font-weight: bold;
+  @media only screen and (min-width: 950px) {
+    
+  }
+`;
 export const HeroImage = styled.div`
  display: none;
   @media only screen and (min-width: 950px) {

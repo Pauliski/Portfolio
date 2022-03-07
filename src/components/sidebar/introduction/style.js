@@ -42,10 +42,12 @@ export const IntroductionActiveStatus = styled.span`
   height: 0.75rem;
   width: 0.75rem;
   border-radius: 50%;
+  
 `;
 export const IntroductionImage = styled.img`
   border-radius: 50%;
-  object-position: center;
+  /* object-position: center; */
+  object-fit: contain;
 `;
 export const IntroductionName = styled.h3`
   /* color: #ffffff; */

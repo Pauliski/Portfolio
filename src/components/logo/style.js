@@ -7,7 +7,7 @@ export const LogoWrapper = styled.div`
   &::after {
     content: "";
     position: absolute;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid ${props => props.color};
     left: 0;
     right: 0;
     bottom: 0;
@@ -15,10 +15,10 @@ export const LogoWrapper = styled.div`
 `;
 export const LogoContainer = styled.div`
   display: flex;
-  background-color: black;
+  background-color: ${props => props.backgroundColor};
   height: 3rem;
   width: 2.8rem;
-  color: #ffffff;
+  color: ${props => props.color};
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   margin-right: 3px;
@@ -28,4 +28,5 @@ export const LogoContainer = styled.div`
 `;
 export const LogoNameTag = styled.p`
   font-size: 1.5rem;
+  color: ${props => props.color};
 `;

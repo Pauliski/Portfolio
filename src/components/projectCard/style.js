@@ -4,7 +4,6 @@ export const ProjectCardWrapper = styled.div`
   background-color: ${(props) => props.backgroundColor};
   margin-bottom: 1.25rem;
   @media only screen and (min-width: 1030px) {
-    
     width: 48%;
   }
   @media only screen and (min-width: 1300px) {

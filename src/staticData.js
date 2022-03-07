@@ -99,7 +99,6 @@ export const workHistories = [
   },
 ];
 
-export const contacts = [{ country: "Nigeria", city: "" }];
 
 export const projects = [
   {
@@ -131,3 +130,5 @@ export const projects = [
     demoLink: "https://inspiring-bassi-eca2ca.netlify.app/",
   },
 ];
+
+export const contacts = [{Country : 'Nigeria', City: 'Lagos', Street: '2 Amodu Farombi'},{Email : 'parokoola@gmail.com', Twitter: '@Pauliski_tech', Telegram: '@Pauliski_tech'}, {Support: '+2347068546905', Whatsapp: '+2347068546905', Personal: '+2347068546905'}]

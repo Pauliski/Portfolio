@@ -11,9 +11,8 @@ import ProgressBar from "../progressbar/ProgressBar";
 import { SidebarSecondSection, SidebarWrapper } from "./style";
 
 const Sidebar = ({ toggleSidebar, sidebarIsOpen }) => {
-  const {cardColor, buttonColor, fontColorOne} = useContext(ThemeContext)
+  const { cardColor, buttonColor, fontColorOne } = useContext(ThemeContext);
   return (
-    
     <SidebarWrapper backgroundColor={cardColor} displaySidebar={sidebarIsOpen}>
       <Introduction toggleSidebar={toggleSidebar} />
       <SidebarSecondSection backgroundColor={buttonColor} color={fontColorOne}>
@@ -21,9 +20,9 @@ const Sidebar = ({ toggleSidebar, sidebarIsOpen }) => {
         <CircularBar displaySidebar={sidebarIsOpen} />
         <AllProgressBar />
         <OtherSkill />
-       <Download />
+        <Download />
+        <Footer />
       </SidebarSecondSection>
-       <Footer />
     </SidebarWrapper>
   );
 };

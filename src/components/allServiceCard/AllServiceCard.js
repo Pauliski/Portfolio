@@ -8,7 +8,7 @@ const AllServiceCard = () => {
   const { fontColorOne }  = useContext(ThemeContext)
   return (
       <>
-      <AllServiceCardHeader color={fontColorOne}>My Services</AllServiceCardHeader>
+      <AllServiceCardHeader color={fontColorOne} >My Services</AllServiceCardHeader>
        <AllServiceCardWrapper>{myServices.map((items, i)=> <ServiceCard key={i} body={items.body} title={items.title}/>)}</AllServiceCardWrapper>
       </>
    
