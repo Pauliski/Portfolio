@@ -16,13 +16,14 @@ const WorkHistory = () => {
       <WorkHistorySessionTitle color={fontColorOne}>Work History</WorkHistorySessionTitle>
       <WorkHistoryWrapper>
         <WorkHistoryContainer>
-          {workHistories.map((item, key) => (
+          {workHistories.map((item, i) => (
             <EducationCard
               body={item.body}
               title={item.title}
               jobTitle={item.jobTitle}
               date={item.date}
               buttonLabel={item.buttonLabel}
+              key={i}
             />
           ))}
         </WorkHistoryContainer>

@@ -18,7 +18,7 @@ const Recommendations = ({body, author, rating}) => {
       <RecommendationsImageAndName>
         <RecommendationsName color={fontColorOne}>{author}</RecommendationsName>
         <RecommendationsImageContainer>
-          <RecommendationsImage src="/assets/images/peteru.jpeg" alt="" />
+          <RecommendationsImage src="/assets/images/peteru.jpeg" alt="person" />
         </RecommendationsImageContainer>
       </RecommendationsImageAndName>
       <RecommendationsBody color={fontColorTwo}>

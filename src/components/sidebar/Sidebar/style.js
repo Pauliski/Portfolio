@@ -6,7 +6,7 @@ export const SidebarWrapper = styled.div`
   /* height: 100%; */
   width: 18.125rem;
   z-index: 3;
-
+height: 100vh;
   /* overflow-y: scroll; */
   top: 0;
   left: ${(props) => (props.displaySidebar ? 0 : "-100%")};

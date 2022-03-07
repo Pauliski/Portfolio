@@ -8,20 +8,12 @@ const ContactCard = ({ data }) => {
   return (
     <ContactCardWrapper backgroundColor={cardColor}>
       {Object.keys(data).map((item, i) => (
-        <>
-          <ContactCardDetails color={fontColorOne} colorTwo={fontColorTwo}>
+        
+          <ContactCardDetails color={fontColorOne} colorTwo={fontColorTwo} key={i}>
             <p>{item}</p>
             <p>{data[item]}</p>
           </ContactCardDetails>
-          {/* <ContactCardDetails color={fontColorOne} colorTwo={fontColorTwo}>
-            <p>City</p>
-            <p>Lagos</p>
-          </ContactCardDetails>
-          <ContactCardDetails color={fontColorOne} colorTwo={fontColorTwo}>
-            <p>Street</p>
-            <p>Isolo</p>
-          </ContactCardDetails> */}
-        </>
+        
       ))}
     </ContactCardWrapper>
   );

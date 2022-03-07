@@ -1,6 +1,10 @@
 import React from "react";
 import CircularBarIcon from "../../../../public/assets/icons/CircularBarIcon";
-import { CircularBarBottomLine, CircularBarWrapper, SvgContainer } from "./style";
+import {
+  CircularBarBottomLine,
+  CircularBarWrapper,
+  SvgContainer,
+} from "./style";
 
 const CircularBar = ({ displaySidebar }) => {
   return (

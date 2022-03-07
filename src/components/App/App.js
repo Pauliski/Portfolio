@@ -14,6 +14,7 @@ import ToggleButton from "../toggleButton/ToggleButton";
 import WorkAndEducation from "../workAndEducation/WorkAndEducation";
 import {
   AppHeroSection,
+  AppOverlay,
   AppSecondSection,
   AppSecondSectionContaner,
   AppWrapper,
@@ -21,7 +22,6 @@ import {
 
 const App = () => {
   const { background, buttonColor } = useContext(ThemeContext);
-  console.log(background)
   const [displaySidebar, setDisplaySidebar] = useState(false);
   const toggleSidebar = () => {
     setDisplaySidebar(!displaySidebar);
@@ -29,6 +29,7 @@ const App = () => {
   return (
     <AppWrapper>
       <Navbar toggleSidebar={toggleSidebar} />
+      <AppOverlay displaySidebar={displaySidebar}></AppOverlay>
       <AppSecondSectionContaner>
         <Sidebar toggleSidebar={toggleSidebar} sidebarIsOpen={displaySidebar} />
         <AppSecondSection backgroundColor={background}>

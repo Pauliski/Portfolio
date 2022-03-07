@@ -10,7 +10,7 @@ const Education = () => {
       <div>
       <EducationSessionTitle color={fontColorOne}>Education</EducationSessionTitle>
        <EducationWrapper>
-        <EducationContainer>{educations.map((item, i)=><EducationCard title={item.title} body={item.body} buttonLabel={item.buttonLabel} date={item.date} />)}</EducationContainer>
+        <EducationContainer>{educations.map((item, i)=><EducationCard title={item.title} body={item.body} buttonLabel={item.buttonLabel} date={item.date} key={i}/>)}</EducationContainer>
         <EducationLine></EducationLine>
     </EducationWrapper>
     

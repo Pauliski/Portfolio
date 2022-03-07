@@ -6,7 +6,7 @@ import { RateContainer } from './style'
 const Rate = ({rating}) => {
   const {cardColor, buttonColor, fontColorOne} = useContext(ThemeContext)
     const [rated, setRated] = useState()
-    const defaultRating = Array(5).fill(0).map((_, i)=> i + 1).map(item => <Star />)
+    const defaultRating = Array(5).fill(0).map((_, i)=> i + 1).map((item, i) => <Star key={i}/>)
     const starRating = ()=>{
         return defaultRating.fill(<Star fill={buttonColor} />, 0, rating)
     }
