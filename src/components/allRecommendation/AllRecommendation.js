@@ -8,7 +8,7 @@ const AllRecommendation = () => {
   const {cardColor, buttonColor, fontColorOne} = useContext(ThemeContext)
   return (
     <>
-    <AllRecommendationHeader color={fontColorOne}>Recommendation</AllRecommendationHeader>
+    <AllRecommendationHeader color={fontColorOne}>Reviews & Ratings</AllRecommendationHeader>
     <AllRecommendationWrapper>
       {recommendations.map((item, i) => (
         <Recommendations

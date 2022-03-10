@@ -2,7 +2,7 @@ import React, { createContext, useState } from "react";
 export const ThemeContext = createContext();
 
 const ThemeContextProvider = ({children}) => {
-    const [isLight, setIsLight] = useState(true)
+    const [isLight, setIsLight] = useState(false)
     const layoutColor = isLight ? {
         fontColorOne: '#000000',
         fontColorTwo: '#77777a',

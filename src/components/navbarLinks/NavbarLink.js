@@ -5,7 +5,7 @@ import { NavbarLinkWrapper } from "./style";
 const NavbarLink = () => {
   const { cardColor, buttonColor, fontColorOne, fontColorTwo, background, isLight, setIsLight } = useContext(ThemeContext);
   return (
-    <NavbarLinkWrapper color={fontColorOne}>
+    <NavbarLinkWrapper color={fontColorTwo}>
       <a href="#home">
         <li>Home</li>
       </a>

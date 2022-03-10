@@ -6,13 +6,16 @@ export const NavbarWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.625rem;
+  /* padding: 0.625rem; */
   height: 5rem;
+  /* position: sticky; */
+  /* top: 0; */
+  /* z-index: 2; */
   @media only screen and (min-width: 768px) {
     padding: 1.25rem;
     position: sticky;
     top: 0;
-    z-index: 4;
+    z-index: 3;
   }
 `;
 export const NavbarSideMenuToggler = styled.button`
@@ -46,6 +49,7 @@ export const NavbarSidebarToggler = styled.button`
 `;
 export const NavbarTogglers = styled.div`
   display: flex;
+align-items: center;
   & svg {
     width: 20px;
     height: 20px;
@@ -64,6 +68,7 @@ export const NavbarAllLink = styled.div`
     display: block;
     & > ul {
       display: flex;
+      align-items: center;
     }
   }
 `;
@@ -77,6 +82,10 @@ export const NavbarAllLinkMobile = styled.div`
   z-index: 5;
   top: 0;
   right: ${(props) => (props.menuIsOpen ? 0 : "100%")};
+  animation-name: example;
+  animation-duration: 4s;
+  /* transition: all .3s ease-out; */
+  /* transition-timing-function: linear; */
   & svg {
     width: 20px;
     height: 20px;
@@ -91,6 +100,9 @@ export const NavbarCloseMenuButton = styled.button`
   background-color: ${(props) => props.backgroundColor};
   padding: 1.25rem;
   text-align: left;
+  & > svg{
+    fill: ${(props) => props.color};
+  }
 `;
 export const NavbarMenuContainer = styled.div`
   height: calc(100% - 5rem);
@@ -98,4 +110,5 @@ export const NavbarMenuContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 5;
 `;

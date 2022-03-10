@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const ProjectCardWrapper = styled.div`
   background-color: ${(props) => props.backgroundColor};
   margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   @media only screen and (min-width: 1030px) {
     width: 48%;
   }
@@ -19,6 +22,8 @@ export const ProjectCardTitle = styled.h2`
   color: ${props => props.color};
 `;
 export const ProjectCardBottom = styled.div`
+
+bottom: 0;
 & > div :nth-child(1){
   color: ${props => props.color};
 }
@@ -28,6 +33,7 @@ export const ProjectCardButtonContainer = styled.div`
   padding: 1.25rem;
   width: 95%;
   justify-content: space-between;
+  
   
 `;
 export const ProjectCardButton = styled.button`

@@ -23,7 +23,6 @@ const ProjectCard = ({ title, about, codeLink, demoLink }) => {
       </ProjectCardContainer>
       <ProjectCardBottom color={fontColorTwo}>
         <Underline />
-
         <ProjectCardButtonContainer >
           <a href={codeLink} target="_blank">
             <ProjectCardButton color={buttonColor}>

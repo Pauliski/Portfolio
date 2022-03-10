@@ -8,6 +8,14 @@ export const AppSecondSectionContaner = styled.div`
   display: flex;
   /* padding: 50px; */
 `;
+export const AppNavbarContainer = styled.div`
+position: sticky;
+top: 0;
+z-index: 3;
+@media (min-width: 768px) {
+        /* position: relative; */
+}
+`
 export const AppSecondSection = styled.div`
   /* position: relative; */
   display: flex;
@@ -22,7 +30,7 @@ export const AppHeroSection = styled.div`
   height: 100%;
 `;
 export const AppOverlay = styled.div`
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   top: 0;
   width: 100%;
   height: 100%;
@@ -30,7 +38,7 @@ export const AppOverlay = styled.div`
   left: 0;
   right: 0;
   position: absolute;
-  display: ${props => props.displaySidebar ? 'block' : 'none'};
+  display: ${props => props.displaySidebar || props.menuIsOpen ? 'block' : 'none'};
   z-index: 3;
   @media (min-width: 960px) {
         display: none;

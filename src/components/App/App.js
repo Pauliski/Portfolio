@@ -14,6 +14,7 @@ import ToggleButton from "../toggleButton/ToggleButton";
 import WorkAndEducation from "../workAndEducation/WorkAndEducation";
 import {
   AppHeroSection,
+  AppNavbarContainer,
   AppOverlay,
   AppSecondSection,
   AppSecondSectionContaner,
@@ -23,15 +24,36 @@ import {
 const App = () => {
   const { background, buttonColor } = useContext(ThemeContext);
   const [displaySidebar, setDisplaySidebar] = useState(false);
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
   const toggleSidebar = () => {
     setDisplaySidebar(!displaySidebar);
   };
+  const toggleMenu = () => {
+    setMenuIsOpen(!menuIsOpen)
+  };
+  const closeSidebar = () => {
+    setDisplaySidebar(false);
+    setMenuIsOpen(false);
+  };
   return (
     <AppWrapper>
-      <Navbar toggleSidebar={toggleSidebar} />
-      <AppOverlay displaySidebar={displaySidebar}></AppOverlay>
+      <AppNavbarContainer>
+        <Navbar
+        toggleSidebar={toggleSidebar}
+        menuIsOpen={menuIsOpen}
+        toggleMenu={toggleMenu}
+      />
+      </AppNavbarContainer>
+      
+      <AppOverlay
+        displaySidebar={displaySidebar}
+        menuIsOpen={menuIsOpen}
+        onClick={closeSidebar}
+      ></AppOverlay>
+      
       <AppSecondSectionContaner>
         <Sidebar toggleSidebar={toggleSidebar} sidebarIsOpen={displaySidebar} />
+        
         <AppSecondSection backgroundColor={background}>
           <AppHeroSection>
             <Hero />

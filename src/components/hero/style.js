@@ -14,6 +14,7 @@ export const HeroWrapper = styled.div`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
  
 
   /* padding: 3.125rem 0 0; */
@@ -67,3 +68,19 @@ export const HeroImage = styled.div`
     z-index: 2;
   }
 `;
+export const FirstButton = styled.button`
+background-color: ${props => props.backgroundColor};
+padding: .5rem;
+border-radius: 5px;
+margin-right: 1.25rem;
+`
+export const SecondButton = styled.button`
+background-color: ${props => props.backgroundColor};
+color: ${props => props.color};
+padding: .5rem;
+border-radius: 5px;
+margin-right: 1.25rem;
+`
+export const ButtonContainer = styled.div`
+margin: 1.25rem 0;
+`

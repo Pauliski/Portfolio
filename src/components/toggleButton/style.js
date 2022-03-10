@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const ToggleButtonWrapper = styled.label`
 position: relative;
 display: none;
+margin: 0 0.625rem;
 @media only screen and (min-width: 768px) {
    display: block;
   }

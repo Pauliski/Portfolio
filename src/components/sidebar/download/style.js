@@ -4,7 +4,8 @@ export const DownloadWrapper = styled.button`
 padding: 1.25rem 0 0;
 color: #87878A;
 display: flex;
-align-items: center;
+/* align-items: center; */
+margin-bottom: 1.25rem;
 
 & > svg{
 margin-left: 1rem;

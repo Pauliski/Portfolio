@@ -6,6 +6,7 @@ import User from "../../../public/assets/icons/User";
 import Input from "../input/Input";
 import TextArea from "../textarea/TextArea";
 import axios from 'axios'
+import swal from "sweetalert";
 import {
   GetInTouchButton,
   GetInTouchSessionTittle,
@@ -15,11 +16,12 @@ import {
 const GetInTouch = () => {
   const { cardColor, buttonColor, fontColorOne, background } =
     useContext(ThemeContext);
-  const [formData, setFormData] = useState({
+  const defaultValue = {
     username: "",
     email: "",
     body: "",
-  });
+  }
+  const [formData, setFormData] = useState(defaultValue);
   const handleChange = (e) => {
     const { value, name } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -32,7 +34,11 @@ const GetInTouch = () => {
             baseURL: '/api/entry/getInTouch',
             data: formData
         });
-        console.log('hello')
+        setFormData(defaultValue)
+        swal({
+          title: "Message Sent",
+          icon: "success",
+        });
        
     } catch (err) {
        console.log(err)

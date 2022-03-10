@@ -21,7 +21,7 @@ import {
   NavbarWrapper,
 } from "./style";
 
-const Navbar = ({ toggleSidebar }) => {
+const Navbar = ({ toggleSidebar, toggleMenu, menuIsOpen }) => {
   const {
     cardColor,
     buttonColor,
@@ -32,14 +32,14 @@ const Navbar = ({ toggleSidebar }) => {
     setIsLight,
   } = useContext(ThemeContext);
   const [isToggled, setIsToggled] = useState(false);
-  const [menuIsOpen, setMenuIsOpen] = useState(false);
+  // const [menuIsOpen, setMenuIsOpen] = useState(false);
   const onChanged = (e) => {
     setIsToggled(e.target.checked);
     setIsLight(!isLight);
   };
-  const toggleMenu = () => {
-    setMenuIsOpen(!menuIsOpen);
-  };
+  // const toggleMenu = () => {
+  //   setMenuIsOpen(!menuIsOpen);
+  // };
   return (
     <NavbarWrapper backgroundColor={background}>
       <NavbarSidebarToggler onClick={toggleSidebar}>
@@ -54,7 +54,6 @@ const Navbar = ({ toggleSidebar }) => {
         <NavbarTogglersIconContainer>
           <Sun />
         </NavbarTogglersIconContainer>
-
         <ToggleButton onChanged={onChanged} />
         <NavbarTogglersIconContainer>
           <Moon />
@@ -64,10 +63,11 @@ const Navbar = ({ toggleSidebar }) => {
           <Hamburger />
         </NavbarSideMenuToggler>
       </NavbarTogglers>
-      <NavbarAllLinkMobile backgroundColor={cardColor} menuIsOpen={menuIsOpen}>
+      {/* <NavbarAllLinkMobile backgroundColor={cardColor} menuIsOpen={menuIsOpen}>
         <NavbarCloseMenuButton
           onClick={toggleMenu}
           backgroundColor={background}
+          color={fontColorOne}
         >
           <Close />
         </NavbarCloseMenuButton>
@@ -75,9 +75,8 @@ const Navbar = ({ toggleSidebar }) => {
           <button onClick={toggleMenu}>
             <NavbarLink />
           </button>
-          
         </NavbarMenuContainer>
-      </NavbarAllLinkMobile>
+      </NavbarAllLinkMobile> */}
     </NavbarWrapper>
   );
 };

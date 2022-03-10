@@ -5,8 +5,8 @@ export const SidebarWrapper = styled.div`
   background-color: ${(props) => props.backgroundColor};
   /* height: 100%; */
   width: 18.125rem;
-  z-index: 3;
-height: 100vh;
+  z-index: 5;
+  height: 100vh;
   /* overflow-y: scroll; */
   top: 0;
   left: ${(props) => (props.displaySidebar ? 0 : "-100%")};
@@ -14,10 +14,10 @@ height: 100vh;
   transition: left 0.3s ease-out;
   @media only screen and (min-width: 768px) {
     left: 0;
-    top: 60px;
+    top: 80px;
     position: sticky;
-    height: calc(100vh - 1rem);
-    height: 100%;
+    height: calc(100vh - 5rem);
+    /* height: 100%; */
   }
 `;
 export const SidebarSecondSection = styled.div`
