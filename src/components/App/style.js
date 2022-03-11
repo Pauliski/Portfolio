@@ -39,8 +39,15 @@ export const AppOverlay = styled.div`
   right: 0;
   position: absolute;
   display: ${props => props.displaySidebar || props.menuIsOpen ? 'block' : 'none'};
-  z-index: 3;
+  z-index: 4;
   @media (min-width: 960px) {
         display: none;
     }
 `;
+export const AppNavLinkContainer = styled.div`
+background-color: ${props => props.backgroundColor};
+
+@media (min-width: 768px) {
+        display: none;
+    }
+`

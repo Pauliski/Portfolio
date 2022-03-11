@@ -21,7 +21,7 @@ import {
   NavbarWrapper,
 } from "./style";
 
-const Navbar = ({ toggleSidebar, toggleMenu, menuIsOpen }) => {
+const Navbar = ({ toggleSidebar, toggleMenu, menuIsOpen, displaySidebar }) => {
   const {
     cardColor,
     buttonColor,
@@ -32,21 +32,18 @@ const Navbar = ({ toggleSidebar, toggleMenu, menuIsOpen }) => {
     setIsLight,
   } = useContext(ThemeContext);
   const [isToggled, setIsToggled] = useState(false);
-  // const [menuIsOpen, setMenuIsOpen] = useState(false);
   const onChanged = (e) => {
     setIsToggled(e.target.checked);
     setIsLight(!isLight);
   };
-  // const toggleMenu = () => {
-  //   setMenuIsOpen(!menuIsOpen);
-  // };
+
   return (
     <NavbarWrapper backgroundColor={background}>
-      <NavbarSidebarToggler onClick={toggleSidebar}>
+      <NavbarSidebarToggler onClick={toggleSidebar} displaySidebar={displaySidebar}>
         <EllipsisVertical />
       </NavbarSidebarToggler>
       <Logo />
-      <NavbarAllLink>
+      <NavbarAllLink menuIsOpen={menuIsOpen}>
         <NavbarLink />
       </NavbarAllLink>
 

@@ -8,6 +8,7 @@ import Contact from "../contact/Contact";
 import GetInTouch from "../getInTouch/GetInTouch";
 import Hero from "../hero/Hero";
 import Navbar from "../navbar/Navbar";
+import NavbarLink from "../navbarLinks/NavbarLink";
 import ProjectCard from "../projectCard/ProjectCard";
 import Sidebar from "../sidebar/Sidebar/Sidebar";
 import ToggleButton from "../toggleButton/ToggleButton";
@@ -15,6 +16,7 @@ import WorkAndEducation from "../workAndEducation/WorkAndEducation";
 import {
   AppHeroSection,
   AppNavbarContainer,
+  AppNavLinkContainer,
   AppOverlay,
   AppSecondSection,
   AppSecondSectionContaner,
@@ -29,7 +31,7 @@ const App = () => {
     setDisplaySidebar(!displaySidebar);
   };
   const toggleMenu = () => {
-    setMenuIsOpen(!menuIsOpen)
+    setMenuIsOpen(!menuIsOpen);
   };
   const closeSidebar = () => {
     setDisplaySidebar(false);
@@ -39,21 +41,25 @@ const App = () => {
     <AppWrapper>
       <AppNavbarContainer>
         <Navbar
-        toggleSidebar={toggleSidebar}
-        menuIsOpen={menuIsOpen}
-        toggleMenu={toggleMenu}
-      />
+          toggleSidebar={toggleSidebar}
+          menuIsOpen={menuIsOpen}
+          toggleMenu={toggleMenu}
+          displaySidebar={displaySidebar}
+        />
       </AppNavbarContainer>
-      
+
       <AppOverlay
         displaySidebar={displaySidebar}
         menuIsOpen={menuIsOpen}
         onClick={closeSidebar}
       ></AppOverlay>
-      
+
       <AppSecondSectionContaner>
         <Sidebar toggleSidebar={toggleSidebar} sidebarIsOpen={displaySidebar} />
-        
+        <AppNavLinkContainer backgroundColor={background}>
+          <NavbarLink menuIsOpen={menuIsOpen} toggleMenu={toggleMenu} />
+        </AppNavLinkContainer>
+
         <AppSecondSection backgroundColor={background}>
           <AppHeroSection>
             <Hero />

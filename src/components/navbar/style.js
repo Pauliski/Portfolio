@@ -8,11 +8,9 @@ export const NavbarWrapper = styled.div`
   align-items: center;
   /* padding: 0.625rem; */
   height: 5rem;
-  /* position: sticky; */
-  /* top: 0; */
-  /* z-index: 2; */
+  padding: 1.25rem;
   @media only screen and (min-width: 768px) {
-    padding: 1.25rem;
+    
     position: sticky;
     top: 0;
     z-index: 3;
@@ -37,7 +35,9 @@ export const NavbarName = styled.p`
 `;
 export const NavbarSidebarToggler = styled.button`
   height: 20px;
-  width: 20px;
+  /* width: 20px; */
+  display: flex;
+  display: ${props => props.displaySidebar ? 'none' : 'block'};
   @media only screen and (min-width: 768px) {
     display: none;
   }
@@ -63,7 +63,8 @@ export const NavbarTogglersIconContainer = styled.div`
   }
 `;
 export const NavbarAllLink = styled.div`
-  display: none;
+  /* display: ${props => props.menuIsOpen ? 'block' : 'none'}; */
+ /* position: absolute; */
   @media only screen and (min-width: 768px) {
     display: block;
     & > ul {
