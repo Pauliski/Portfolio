@@ -21,9 +21,11 @@ export const NavbarLinkListContainer = styled.div`
   @media only screen and (min-width: 768px) {
     position: relative;
     display: flex;
+    flex-direction: row;
     width: 100%;
     height: 100%;
     align-items: center;
+    padding: 0;
 
   }
 `;
@@ -50,6 +52,7 @@ height: 100%;
   @media only screen and (min-width: 768px) {
     position: relative;
     display: flex;
+    flex-direction: row;
     width: 100%;
     align-items: center;
     

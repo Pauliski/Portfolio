@@ -5,14 +5,15 @@ import EducationCard from "../educationCard/EducationCard";
 import {
   WorkHistoryContainer,
   WorkHistoryLine,
+  WorkHistorySessionHolder,
   WorkHistorySessionTitle,
   WorkHistoryWrapper,
 } from "./style";
 
 const WorkHistory = () => {
-  const {fontColorOne} = useContext(ThemeContext)
+  const {fontColorOne, fontColorTwo} = useContext(ThemeContext)
   return (
-    <div>
+    <WorkHistorySessionHolder>
       <WorkHistorySessionTitle color={fontColorOne}>Work History</WorkHistorySessionTitle>
       <WorkHistoryWrapper>
         <WorkHistoryContainer>
@@ -27,9 +28,9 @@ const WorkHistory = () => {
             />
           ))}
         </WorkHistoryContainer>
-        <WorkHistoryLine></WorkHistoryLine>
+        <WorkHistoryLine backgroundColor={fontColorTwo}></WorkHistoryLine>
       </WorkHistoryWrapper>
-    </div>
+    </WorkHistorySessionHolder>
   );
 };
 

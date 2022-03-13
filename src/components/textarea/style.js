@@ -17,7 +17,7 @@ export const TextareaField = styled.textarea`
   border: none;
   color: #ffffff;
   color: ${props => props.color};
-  padding-left: 10px;
+  padding: 0.625rem;
   outline: none;
   font-size: 1.2rem;
   &:focus + div {

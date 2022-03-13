@@ -8,12 +8,14 @@ export const HeroWrapper = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  /* justify-content: center ; */
   justify-content: center;
   position: relative;
   background-image: url("/assets/images/wall.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 18.75rem;
 
  
 
@@ -21,16 +23,20 @@ export const HeroWrapper = styled.div`
   @media only screen and (min-width: 768px) {
     flex-direction: row;
     justify-content: space-around;
-    width: 100%;
+    height: 100%;
   }
 `;
 
 export const HeroSectionOverlay = styled.div`
-  background-color: rgba(0, 0, 0, 0.8);
-  background-color: ${props => props.backgroundColor};
+  background-color: rgba(0, 0, 0, 0.9);
+ 
   position: absolute;
   width: 100%;
   height: 100%;
+  @media only screen and (min-width: 768px) {
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    background-color: ${props => props.backgroundColor};
+  }
 `;
 export const HeroBackgroundImage = styled.img`
   height: 100%;
@@ -70,16 +76,20 @@ export const HeroImage = styled.div`
 `;
 export const FirstButton = styled.button`
 background-color: ${props => props.backgroundColor};
-padding: .5rem;
+padding: 1rem;
 border-radius: 5px;
 margin-right: 1.25rem;
+margin-bottom: 1.25rem;
+width: 9.375rem;
 `
 export const SecondButton = styled.button`
 background-color: ${props => props.backgroundColor};
 color: ${props => props.color};
-padding: .5rem;
+padding: 1rem;
 border-radius: 5px;
 margin-right: 1.25rem;
+width: 9.375rem;
+
 `
 export const ButtonContainer = styled.div`
 margin: 1.25rem 0;

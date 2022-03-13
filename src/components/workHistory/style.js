@@ -1,5 +1,15 @@
 import styled from "styled-components";
 
+export const WorkHistorySessionHolder = styled.div`
+ @media only screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    
+    /* width: 50%; */
+  }
+`
+
 export const WorkHistorySessionTitle = styled.p`
 color: #FFFFFF;
 color: ${props => props.color};
@@ -11,14 +21,18 @@ export const WorkHistoryWrapper = styled.div`
 position: relative;
 `
 export const WorkHistoryContainer = styled.div`
-z-index: 2;
+& > div{
+    z-index: 2;
+}
+
 `
 export const WorkHistoryLine = styled.div`
 position: absolute;
 height: 100%;
 width: 5px;
-background-color: #20202A;
+background-color: ${props => props.backgroundColor};
+/* background-color: red; */
 top: 0;
 right: 10px;
-z-index: -1;
+z-index: 1;
 `

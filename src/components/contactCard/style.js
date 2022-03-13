@@ -8,7 +8,7 @@ export const ContactCardWrapper = styled.div`
   max-height: 220px;
   margin-bottom: 1.25rem;
   width: 100%;
-  @media only screen and (min-width: 1030px) {
+  @media only screen and (min-width: 860px) {
     width: 48%;
   }
   @media only screen and (min-width: 1300px) {

@@ -14,7 +14,7 @@ import {
   EducationCardWrapper,
 } from "./style";
 
-const EducationCard = ({ body, title, date, buttonLabel, jobTitle }) => {
+const EducationCard = ({ body, title, date, buttonLabel, jobTitle, previewLink }) => {
   const {cardColor, buttonColor, fontColorOne, fontColorTwo, background} = useContext(ThemeContext)
   return (
     <EducationCardContainer backgroundColor={cardColor}>
@@ -30,7 +30,10 @@ const EducationCard = ({ body, title, date, buttonLabel, jobTitle }) => {
           </EducationCardDateContainer>
         </EducationCardHeaderContainer>
         <EducationCardBody color={fontColorTwo}>{body}</EducationCardBody>
-        <EducationCardButton color={buttonColor}>{buttonLabel}</EducationCardButton>
+        <a href={previewLink} target="_blank">
+          <EducationCardButton color={buttonColor}>{buttonLabel}</EducationCardButton>
+        </a>
+        
       </EducationCardWrapper>
       <EducationCardIconContainer>
         <RotateSquare />

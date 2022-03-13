@@ -2,19 +2,19 @@ import React, { useContext } from 'react'
 import { ThemeContext } from '../../../context/ThemeContext'
 import { educations } from '../../staticData'
 import EducationCard from '../educationCard/EducationCard'
-import { EducationContainer, EducationLine, EducationSessionTitle, EducationWrapper } from './style'
+import { EducationContainer, EducationLine, EducationSessionHolder, EducationSessionTitle, EducationWrapper } from './style'
 
 const Education = () => {
-  const {fontColorOne} = useContext(ThemeContext)
+  const {fontColorOne, fontColorTwo} = useContext(ThemeContext)
   return (
-      <div>
-      <EducationSessionTitle color={fontColorOne}>Education</EducationSessionTitle>
+      <EducationSessionHolder>
+      <EducationSessionTitle color={fontColorOne}>Education & Certification</EducationSessionTitle>
        <EducationWrapper>
-        <EducationContainer>{educations.map((item, i)=><EducationCard title={item.title} body={item.body} buttonLabel={item.buttonLabel} date={item.date} key={i}/>)}</EducationContainer>
-        <EducationLine></EducationLine>
+        <EducationContainer>{educations.map((item, i)=><EducationCard title={item.title} body={item.body} buttonLabel={item.buttonLabel} date={item.date} key={i} previewLink={item.previewLink} />)}</EducationContainer>
+        <EducationLine backgroundColor={fontColorTwo}></EducationLine>
     </EducationWrapper>
     
-      </div>
+      </EducationSessionHolder>
    
   )
 }

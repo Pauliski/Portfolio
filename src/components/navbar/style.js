@@ -10,7 +10,6 @@ export const NavbarWrapper = styled.div`
   height: 5rem;
   padding: 1.25rem;
   @media only screen and (min-width: 768px) {
-    
     position: sticky;
     top: 0;
     z-index: 3;
@@ -66,7 +65,8 @@ export const NavbarAllLink = styled.div`
   /* display: ${props => props.menuIsOpen ? 'block' : 'none'}; */
  /* position: absolute; */
   @media only screen and (min-width: 768px) {
-    display: block;
+    display: flex;
+    width: 70%;
     & > ul {
       display: flex;
       align-items: center;

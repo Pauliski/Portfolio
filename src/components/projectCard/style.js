@@ -48,7 +48,7 @@ export const ProjectCardButton = styled.button`
     bottom: 0;
     left: 0;
     right: 100%;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid ${props => props.colorTwo};
     transition: right 0.3s ease-out;
   }
   &:hover {

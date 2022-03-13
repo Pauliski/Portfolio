@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const IntroductionWrapper = styled.div`
   /* background-color: #24242f; */
   background-color: ${props => props.backgroundColor};
-  height: 16.875rem;
+  height: 14rem;
   position: relative;
   display: flex;
   justify-content: center;
