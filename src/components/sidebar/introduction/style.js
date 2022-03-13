@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const IntroductionWrapper = styled.div`
-  background-color: #24242f;
-  height: 16.875rem;
+  /* background-color: #24242f; */
+  background-color: ${props => props.backgroundColor};
+  height: 14rem;
   position: relative;
   display: flex;
   justify-content: center;
@@ -22,7 +23,8 @@ export const IntroductionSvgContainer = styled.button`
   height: 20px;
   & > svg {
   height: 100%;
-  fill: #8c8c8e;
+  /* fill: #8c8c8e; */
+  fill: ${props => props.fill};
   }
  
 `;
@@ -36,19 +38,24 @@ export const IntroductionActiveStatus = styled.span`
   bottom: 10%;
   right: 2%;
   background-color: #ffc107;
+  background-color: ${props => props.backgroundColor};
   height: 0.75rem;
   width: 0.75rem;
   border-radius: 50%;
+  
 `;
 export const IntroductionImage = styled.img`
   border-radius: 50%;
-  object-position: center;
+  /* object-position: center; */
+  object-fit: contain;
 `;
 export const IntroductionName = styled.h3`
-  color: #ffffff;
+  /* color: #ffffff; */
+  color: ${props => props.fontColor};
   word-spacing: 0.5rem;
 `;
 export const IntroductionProfession = styled.p`
-  color: #ffffff;
+  /* color: #ffffff; */
+  color: ${props => props.fontColor};
   margin-top: 0.625rem;
 `;

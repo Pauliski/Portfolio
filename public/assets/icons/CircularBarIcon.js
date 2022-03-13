@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled, { keyframes } from "styled-components";
+import { ThemeContext } from "../../../context/ThemeContext";
 
 const anim = keyframes`
 0%{
@@ -18,7 +19,7 @@ const animClose = keyframes`
     }`;
 
 const CircularBarCover = styled.div`
-width: 100%;
+  width: 100%;
 `;
 const CircularBarIconWrapper = styled.div`
   position: relative;
@@ -43,6 +44,7 @@ const SvgStyle = styled.svg`
   fill: none;
   stroke-width: 5;
   stroke: #ffc107;
+  stroke: ${(props) => props.buttonColor};
   stroke-dasharray: 157;
   animation-name: ${(props) => (props.displaySidebar ? anim : animClose)};
   animation-duration: 3s;
@@ -52,34 +54,42 @@ const SvgStyle = styled.svg`
     props.percent
       ? `stroke-dashoffset: calc(156 - (156 * (${props.percent} / 100)));`
       : ""}
-      
 `;
 
 const CircularBarIconText = styled.h5`
   position: absolute;
   display: flex;
-  color: #ffffff;
+  /* color: #ffffff; */
+  color: ${(props) => props.fontColorOne};
 `;
 const CircularBarIconLanguageText = styled.h5`
   margin-top: 0.625rem;
   color: #ffffff;
+  color: ${(props) => props.fontColorOne};
 `;
 
 const CircularBarIcon = ({ displaySidebar, percent, language }) => {
+  const { cardColor, buttonColor, fontColorOne } = useContext(ThemeContext);
   return (
     <div>
       <CircularBarIconWrapper>
         <SvgContainer>
-          <SvgStyle displaySidebar={displaySidebar} percent={percent}>
+          <SvgStyle
+            displaySidebar={displaySidebar}
+            percent={percent}
+            buttonColor={buttonColor}
+          >
             <circle cx="25" cy="25" r="25"></circle>
           </SvgStyle>
-          <CircularBarIconText>
+          <CircularBarIconText fontColorOne={fontColorOne}>
             {percent}
             <span>%</span>
           </CircularBarIconText>
         </SvgContainer>
 
-        <CircularBarIconLanguageText>{language}</CircularBarIconLanguageText>
+        <CircularBarIconLanguageText fontColorOne={fontColorOne}>
+          {language}
+        </CircularBarIconLanguageText>
       </CircularBarIconWrapper>
     </div>
   );

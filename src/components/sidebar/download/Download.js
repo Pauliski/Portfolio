@@ -4,7 +4,10 @@ import { DownloadWrapper } from './style'
 
 const Download = () => {
   return (
-    <DownloadWrapper>DOWNLOAD CV <DownloadIcon /></DownloadWrapper>
+    <a href="https://drive.google.com/file/d/1l74CbWDGZ642jLIw4SrPRn1m-0Wvnkaj/view?usp=sharing" target="_blank">
+      <DownloadWrapper>DOWNLOAD CV <DownloadIcon /></DownloadWrapper>
+      </a>
+    
   )
 }
 
