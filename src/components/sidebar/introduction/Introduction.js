@@ -20,11 +20,11 @@ const Introduction = ({ toggleSidebar }) => {
   return (
     <IntroductionWrapper backgroundColor={background}>
       <IntroductionDetails>
-        <IntroductionSvgContainer fill={fontColorOne} onClick={toggleSidebar}>
+        <IntroductionSvgContainer fill={buttonColor} onClick={toggleSidebar}>
           <EllipsisVertical />
         </IntroductionSvgContainer>
         <IntroductionImageContainer>
-          <IntroductionImage src="/assets/images/mypix.png" />
+          <IntroductionImage src="/assets/images/mypic.png" />
           <IntroductionActiveStatus backgroundColor={buttonColor}/>
         </IntroductionImageContainer>
         <IntroductionName fontColor={fontColorOne}>PAUL AROKOOLA</IntroductionName>

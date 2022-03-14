@@ -36,19 +36,22 @@ export const NavbarSidebarToggler = styled.button`
   height: 20px;
   /* width: 20px; */
   display: flex;
-  display: ${props => props.displaySidebar ? 'none' : 'block'};
+  display: ${(props) => (props.displaySidebar ? "none" : "block")};
   @media only screen and (min-width: 768px) {
     display: none;
   }
   & > svg {
     width: 100%;
     height: 100%;
-    fill: #8c8c8e;
+    fill: ${props => props.color};
   }
 `;
 export const NavbarTogglers = styled.div`
-  display: flex;
-align-items: center;
+  display: none;
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
   & svg {
     width: 20px;
     height: 20px;
@@ -62,8 +65,8 @@ export const NavbarTogglersIconContainer = styled.div`
   }
 `;
 export const NavbarAllLink = styled.div`
-  /* display: ${props => props.menuIsOpen ? 'block' : 'none'}; */
- /* position: absolute; */
+  /* display: ${(props) => (props.menuIsOpen ? "block" : "none")}; */
+  /* position: absolute; */
   @media only screen and (min-width: 768px) {
     display: flex;
     width: 70%;
@@ -101,7 +104,7 @@ export const NavbarCloseMenuButton = styled.button`
   background-color: ${(props) => props.backgroundColor};
   padding: 1.25rem;
   text-align: left;
-  & > svg{
+  & > svg {
     fill: ${(props) => props.color};
   }
 `;

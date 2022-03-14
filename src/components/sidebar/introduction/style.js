@@ -46,7 +46,7 @@ export const IntroductionActiveStatus = styled.span`
 `;
 export const IntroductionImage = styled.img`
   border-radius: 50%;
-  /* object-position: center; */
+  object-position: center;
   object-fit: contain;
 `;
 export const IntroductionName = styled.h3`

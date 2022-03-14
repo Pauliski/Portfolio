@@ -39,7 +39,7 @@ const Navbar = ({ toggleSidebar, toggleMenu, menuIsOpen, displaySidebar }) => {
 
   return (
     <NavbarWrapper backgroundColor={background}>
-      <NavbarSidebarToggler onClick={toggleSidebar} displaySidebar={displaySidebar}>
+      <NavbarSidebarToggler onClick={toggleSidebar} displaySidebar={displaySidebar} color={buttonColor}>
         <EllipsisVertical />
       </NavbarSidebarToggler>
       <Logo />
@@ -56,24 +56,11 @@ const Navbar = ({ toggleSidebar, toggleMenu, menuIsOpen, displaySidebar }) => {
           <Moon />
         </NavbarTogglersIconContainer>
 
-        <NavbarSideMenuToggler color={fontColorOne} onClick={toggleMenu}>
+        
+      </NavbarTogglers>
+      <NavbarSideMenuToggler color={buttonColor} onClick={toggleMenu}>
           <Hamburger />
         </NavbarSideMenuToggler>
-      </NavbarTogglers>
-      {/* <NavbarAllLinkMobile backgroundColor={cardColor} menuIsOpen={menuIsOpen}>
-        <NavbarCloseMenuButton
-          onClick={toggleMenu}
-          backgroundColor={background}
-          color={fontColorOne}
-        >
-          <Close />
-        </NavbarCloseMenuButton>
-        <NavbarMenuContainer>
-          <button onClick={toggleMenu}>
-            <NavbarLink />
-          </button>
-        </NavbarMenuContainer>
-      </NavbarAllLinkMobile> */}
     </NavbarWrapper>
   );
 };
