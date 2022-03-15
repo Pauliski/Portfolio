@@ -17,10 +17,10 @@ export const NavbarWrapper = styled.div`
 `;
 export const NavbarSideMenuToggler = styled.button`
   height: 20px;
-  width: 20px;
+  /* width: 20px; */
 
   & > svg {
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     fill: ${(props) => props.color};
   }
@@ -41,7 +41,6 @@ export const NavbarSidebarToggler = styled.button`
     display: none;
   }
   & > svg {
-    width: 100%;
     height: 100%;
     fill: ${props => props.color};
   }
