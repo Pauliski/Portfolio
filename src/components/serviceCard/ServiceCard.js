@@ -8,7 +8,10 @@ const ServiceCard = ({body, title}) => {
     <ServiceCardWrapper backgroundColor={cardColor}>
         <ServiceCardHeader color={fontColorOne}>{title}</ServiceCardHeader>
         <ServiceCardBody>{body}</ServiceCardBody>
-        <ServiceCardButton color={buttonColor}>ORDER NOW</ServiceCardButton>
+        <a href="#getInTouch">
+          <ServiceCardButton color={buttonColor}>ORDER NOW</ServiceCardButton>
+        </a>
+        
     </ServiceCardWrapper>
   )
 }
