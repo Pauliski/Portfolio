@@ -26,6 +26,9 @@ export const IntroductionSvgContainer = styled.button`
   /* fill: #8c8c8e; */
   fill: ${props => props.fill};
   }
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
  
 `;
 export const IntroductionImageContainer = styled.div`

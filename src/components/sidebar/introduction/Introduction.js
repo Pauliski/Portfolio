@@ -13,6 +13,7 @@ import {
 } from "./style";
 import EllipsisVertical from "../../../../public/assets/icons/EllipsisVertical";
 import { ThemeContext } from "../../../../context/ThemeContext";
+import Close from "../../../../public/assets/icons/Close";
 
 const Introduction = ({ toggleSidebar }) => {
   const { fontColorOne, fontColorTwo, cardColor, background, buttonColor } =
@@ -21,7 +22,7 @@ const Introduction = ({ toggleSidebar }) => {
     <IntroductionWrapper backgroundColor={background}>
       <IntroductionDetails>
         <IntroductionSvgContainer fill={buttonColor} onClick={toggleSidebar}>
-          <EllipsisVertical />
+          <Close />
         </IntroductionSvgContainer>
         <IntroductionImageContainer>
           <IntroductionImage src="/assets/images/mypic.png" />

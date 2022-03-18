@@ -15,23 +15,40 @@ const NavbarLink = ({menuIsOpen, toggleMenu}) => {
   } = useContext(ThemeContext);
   return (
     <NavbarLinkListContainer menuIsOpen={menuIsOpen} backgroundColor={background}>
-      <NavbarLinkButton onClick={toggleMenu} color={fontColorOne}>
+      <NavbarLinkButton onClick={toggleMenu}  color={fontColorOne}>
         <Close />
       </NavbarLinkButton>
       
-      <NavbarLinkWrapper color={fontColorOne}>
-        <a href="#home">
-          <li>Home</li>
-        </a>
-        <a href="#services">
-          <li>Services</li>
-        </a>
-        <a href="#projects">
-          <li>Projects</li>
-        </a>
-        <a href="#getInTouch">
-          <li>Get In Touch</li>
-        </a>
+      <NavbarLinkWrapper menuIsOpen={menuIsOpen} color={fontColorOne}>
+        
+          <li>
+            <a href="#home">
+            Home
+             </a>
+            </li>
+       
+
+        
+          <li>
+            <a href="#services">
+            Services
+             </a>
+            </li>
+       
+        
+          <li>
+            <a href="#projects">
+            Projects
+            </a>
+            </li>
+        
+        
+          <li>
+            <a href="#getInTouch">
+            Get In Touch
+            </a>
+            </li>
+        
       </NavbarLinkWrapper>
     </NavbarLinkListContainer>
   );
