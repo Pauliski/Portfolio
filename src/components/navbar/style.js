@@ -66,6 +66,7 @@ export const NavbarTogglersIconContainer = styled.div`
 export const NavbarAllLink = styled.div`
   /* display: ${(props) => (props.menuIsOpen ? "block" : "none")}; */
   /* position: absolute; */
+  display: none;
   @media only screen and (min-width: 768px) {
     display: flex;
     width: 70%;
