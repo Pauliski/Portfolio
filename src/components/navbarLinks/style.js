@@ -3,7 +3,7 @@ import { keyframes } from "styled-components";
 
 const transKeyframe = keyframes`
 0%{
-        transform: translateX(120px);
+        transform: translateX(60px);
     },
     100%{
       transform: translateX(0);
