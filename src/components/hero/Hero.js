@@ -33,7 +33,7 @@ const Hero = () => {
             <ButtonContainer>
               <a href="#getInTouch">
                 <FirstButton backgroundColor={buttonColor}>
-                  I need a Wesite
+                  I NEED A WEBSITE
                 </FirstButton>
               </a>
               <a href="#getInTouch">
@@ -41,7 +41,7 @@ const Hero = () => {
                   backgroundColor={fontColorOne}
                   color={fontColorTwo}
                 >
-                  I'm looking to hire
+                  I'M LOOKING TO HIRE
                 </SecondButton>
               </a>
             </ButtonContainer>

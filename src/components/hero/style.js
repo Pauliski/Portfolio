@@ -80,7 +80,7 @@ padding: 1rem;
 border-radius: 5px;
 margin-right: 1.25rem;
 margin-bottom: 1.25rem;
-width: 9.375rem;
+width: 11rem;
 `
 export const SecondButton = styled.button`
 background-color: ${props => props.backgroundColor};
@@ -88,7 +88,7 @@ color: ${props => props.color};
 padding: 1rem;
 border-radius: 5px;
 margin-right: 1.25rem;
-width: 9.375rem;
+width: 11rem;
 
 `
 export const ButtonContainer = styled.div`

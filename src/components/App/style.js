@@ -6,6 +6,7 @@ export const AppWrapper = styled.div`
 export const AppSecondSectionContaner = styled.div`
   /* position: relative; */
   display: flex;
+  
   /* padding: 50px; */
 `;
 export const AppNavbarContainer = styled.div`
@@ -24,6 +25,7 @@ export const AppSecondSection = styled.div`
   /* background-color: rgba(30, 30, 40, 0.88); */
   background-color: ${(props) => props.backgroundColor};
   padding: 1.25rem;
+  padding-bottom: 0;
 `;
 export const AppHeroSection = styled.div`
   width: 100%;

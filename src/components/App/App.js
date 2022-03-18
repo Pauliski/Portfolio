@@ -5,6 +5,7 @@ import AllProject from "../allProject/AllProject";
 import AllRecommendation from "../allRecommendation/AllRecommendation";
 import AllServiceCard from "../allServiceCard/AllServiceCard";
 import Contact from "../contact/Contact";
+import Footer from "../footer/Footer";
 import GetInTouch from "../getInTouch/GetInTouch";
 import Hero from "../hero/Hero";
 import Navbar from "../navbar/Navbar";
@@ -70,9 +71,13 @@ const App = () => {
             <WorkAndEducation />
             <Contact />
             <GetInTouch />
+             <Footer />
           </AppHeroSection>
+         
         </AppSecondSection>
+         
       </AppSecondSectionContaner>
+     
     </AppWrapper>
   );
 };

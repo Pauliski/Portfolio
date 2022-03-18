@@ -5,7 +5,7 @@ export const ServiceCardWrapper = styled.div`
   background-color: ${props=>props.backgroundColor};
   width: 100%;
   padding: 1.25rem;
-  max-height: 220px;
+  max-height: 240px;
   /* border: 1px solid #fff; */
   margin-bottom: 1.25rem;
   @media only screen and (min-width: 1030px) {
