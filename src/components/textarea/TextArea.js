@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { ThemeContext } from "../../../context/ThemeContext";
 import { TextareaField, TextareaIconContainer, TextareaWrapper } from "./style";
 
-const TextArea = ({ icon, value, onChange, name }) => {
+const TextArea = ({ icon, value, onChange, name, placeholder }) => {
   const { cardColor, buttonColor, fontColorOne, background, fontColorTwo } =
     useContext(ThemeContext);
   return (
@@ -13,6 +13,7 @@ const TextArea = ({ icon, value, onChange, name }) => {
         buttonColor={buttonColor}
         value={value}
         name={name}
+        placeholder={placeholder}
         onChange={(e)=> onChange(e)}
         required
       />

@@ -55,12 +55,14 @@ const GetInTouch = () => {
           type="text"
           name="username"
           value={formData.username}
+          placeholder="Your name"
           onChange={handleChange}
         />
         <Input
           icon={<Email />}
           type="email"
           name="email"
+          placeholder="Email"
           value={formData.email}
           onChange={handleChange}
         />
@@ -68,6 +70,7 @@ const GetInTouch = () => {
           icon={<Envelop />}
           value={formData.body}
           name="body"
+          placeholder="Message body"
           onChange={handleChange}
         />
         <GetInTouchButton backgroundColor={buttonColor} color={fontColorOne}>

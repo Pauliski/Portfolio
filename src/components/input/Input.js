@@ -3,7 +3,7 @@ import { ThemeContext } from "../../../context/ThemeContext";
 import User from "../../../public/assets/icons/User";
 import { InputField, InputIconContainer, InputWrapper } from "./style";
 
-const Input = ({ icon, type, value, onChange, name }) => {
+const Input = ({ icon, type, value, onChange, name, placeholder }) => {
   const { cardColor, buttonColor, fontColorOne, background, fontColorTwo } =
     useContext(ThemeContext);
   return (
@@ -15,6 +15,7 @@ const Input = ({ icon, type, value, onChange, name }) => {
         name={name}
         type={type}
         value={value}
+        placeholder={placeholder}
         onChange={(e) => onChange(e)}
         required
       />

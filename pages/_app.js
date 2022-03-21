@@ -9,7 +9,10 @@ function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    setLoading(false);
+   const timer = setTimeout(()=>{
+      setLoading(false);
+    }, 1000)
+    return timer
 }, []);
 
   return (
