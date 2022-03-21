@@ -11,14 +11,14 @@ import {
   RecommendationsWrapper,
 } from "./style";
 
-const Recommendations = ({body, author, rating}) => {
+const Recommendations = ({body, author, rating, src}) => {
   const {cardColor, buttonColor, fontColorOne, fontColorTwo, background} = useContext(ThemeContext)
   return (
     <RecommendationsWrapper backgroundColor={cardColor}>
       <RecommendationsImageAndName>
         <RecommendationsName color={fontColorOne}>{author}</RecommendationsName>
         <RecommendationsImageContainer>
-          <RecommendationsImage src="/assets/images/peteru.jpeg" alt="person" />
+          <RecommendationsImage src={src} />
         </RecommendationsImageContainer>
       </RecommendationsImageAndName>
       <RecommendationsBody color={fontColorTwo}>

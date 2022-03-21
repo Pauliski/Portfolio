@@ -16,6 +16,7 @@ const AllRecommendation = () => {
           body={item.body}
           author={item.author}
           rating={item.rating}
+          src={item.src}
         />
       ))}
     </AllRecommendationWrapper>

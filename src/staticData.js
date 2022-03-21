@@ -27,19 +27,22 @@ export const myServices = [
 
 export const recommendations = [
   {
-    body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, iusto recusandae. Ad eveniet dolor ab quisquam, numquam officia quo nesciunt eius excepturi voluptates, quidem autem, totam repellendus necessitatibus accusamus! Quos.",
-    author: "Peteru Johnny",
-    rating: 3,
-  },
-  {
-    body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, iusto recusandae. Ad eveniet dolor ab quisquam, numquam officia quo nesciunt eius excepturi voluptates, quidem autem, totam repellendus necessitatibus accusamus! Quos.",
-    author: "Peteru Johnny",
+    body: "Paul took his time to go through our codebase, understand what is needed to complete all tickets assigned to him, and proffer assistance to other members of the team. Look forward to pairing with you again. Thank you!.",
+    author: "Kayode",
+    src: '/assets/images/kay.jpeg',
     rating: 5,
   },
   {
     body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, iusto recusandae. Ad eveniet dolor ab quisquam, numquam officia quo nesciunt eius excepturi voluptates, quidem autem, totam repellendus necessitatibus accusamus! Quos.",
     author: "Peteru Johnny",
+    src: '/assets/images/peteru.jpeg',
     rating: 4,
+  },
+  {
+    body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, iusto recusandae. Ad eveniet dolor ab quisquam, numquam officia quo nesciunt eius excepturi voluptates, quidem autem, totam repellendus necessitatibus accusamus! Quos.",
+    author: "Peteru Johnny",
+    src: '/assets/images/peteru.jpeg',
+    rating: 5,
   },
 ];
 export const educations = [
