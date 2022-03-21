@@ -10,6 +10,7 @@ import GetInTouch from "../getInTouch/GetInTouch";
 import Hero from "../hero/Hero";
 import Navbar from "../navbar/Navbar";
 import NavbarLink from "../navbarLinks/NavbarLink";
+import Preloader from "../preloader/Preloader";
 import ProjectCard from "../projectCard/ProjectCard";
 import Sidebar from "../sidebar/Sidebar/Sidebar";
 import ToggleButton from "../toggleButton/ToggleButton";
@@ -19,6 +20,7 @@ import {
   AppNavbarContainer,
   AppNavLinkContainer,
   AppOverlay,
+  AppPreloaderContainer,
   AppSecondSection,
   AppSecondSectionContaner,
   AppWrapper,
@@ -40,6 +42,8 @@ const App = () => {
   };
   return (
     <AppWrapper>
+      {/* <Preloader /> */}
+
       <AppNavbarContainer>
         <Navbar
           toggleSidebar={toggleSidebar}
@@ -71,13 +75,10 @@ const App = () => {
             <WorkAndEducation />
             <Contact />
             <GetInTouch />
-             <Footer />
+            <Footer />
           </AppHeroSection>
-         
         </AppSecondSection>
-         
       </AppSecondSectionContaner>
-     
     </AppWrapper>
   );
 };

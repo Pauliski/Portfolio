@@ -53,3 +53,6 @@ background-color: ${props => props.backgroundColor};
         display: none;
     }
 `
+export const AppPreloaderContainer = styled.div`
+display: none;
+`
