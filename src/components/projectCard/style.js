@@ -8,9 +8,11 @@ export const ProjectCardWrapper = styled.div`
   justify-content: space-between;
   @media only screen and (min-width: 1030px) {
     width: 48%;
+    margin-right: 1%;
   }
   @media only screen and (min-width: 1300px) {
-    width: 33%;
+    width: 32%;
+    
   }
 `;
 export const ProjectCardContainer = styled.div`

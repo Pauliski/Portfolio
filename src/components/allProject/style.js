@@ -5,7 +5,6 @@ display: flex;
 flex-direction: column;
 @media only screen and (min-width: 768px) {
     flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
   }
 `

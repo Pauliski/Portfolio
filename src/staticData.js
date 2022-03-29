@@ -103,6 +103,13 @@ export const projects = [
     demoLink: "https://www.teamphixit.com/",
   },
   {
+    title: "Slick Media Group Assessment",
+    about:
+      "I built an app for movie search, where I make a request to an API name to fetch the search and display the result gotten from the API to the user.",
+    codeLink: " https://github.com/Pauliski/slick-media-group-assessment",
+    demoLink: "https://624093234c111e72a97fd41b--taupe-nasturtium-409930.netlify.app/",
+  },
+  {
     title: "Edvora Assesment",
     about:
       "I apply for a frontend react intern role in Edvora. I was giving a Figma design for the desktop to build a product page that fetches its products from an external API using next.js (React.js  Framework) and I also come up with a responsive design for the smaller screen which includes mini-laptops, iPad, and mobiles",
